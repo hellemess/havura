@@ -1,0 +1,18 @@
+{
+  "name": "havura",
+  "version": "1.0.0",
+  "description": "saint petersburg public organization «jewish national-cultural autonomy — resource center»’s website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hellemess/havura.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hellemess/havura/issues"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.5"
+  },
+  "scripts": {
+    "start": "gulp"
+  }
+}
