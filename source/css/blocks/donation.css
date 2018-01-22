@@ -2,8 +2,8 @@
   display: block;
   padding: 6px;
 
-  font-family: 'montserrat', 'segoe ui', sans-serif;
   font-weight: bold;
+  font-size: 24px;
   letter-spacing: 5px;
   text-transform: uppercase;
   text-decoration: none;
@@ -11,13 +11,14 @@
 
   color: white;
   background: #C00;
+  border: 3px solid transparent;
 }
 
-.donation:focus,
 .donation:hover {
   background: red;
 }
 
 .donation:focus {
+  border-color: var(--yellow-1);
   outline: none;
 }

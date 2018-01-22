@@ -1,4 +1,6 @@
+@import 'variables.css';
 @import 'scaffolding.css';
 
 @import 'blocks/donation.css';
 @import 'blocks/header.css';
+@import 'blocks/opening.css';

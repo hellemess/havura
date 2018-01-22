@@ -1,25 +1,3 @@
-@font-face {
-  font-family: 'montserrat';
-  font-weight: normal;
-  font-style: normal;
-  font-display: fallback;
-  src:
-    local('montserrat'),
-    url('../fonts/montserrat.woff2') format('woff2'),
-    url('../fonts/montserrat.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'montserrat';
-  font-weight: bold;
-  font-style: normal;
-  font-display: fallback;
-  src:
-    local('montserrat'),
-    url('../fonts/montserrat-black.woff2') format('woff2'),
-    url('../fonts/montserrat-black.woff') format('woff');
-}
-
 html {
   box-sizing: border-box;
 }
@@ -36,7 +14,7 @@ body {
   font-size: 16px;
   line-height: 1.4;
 
-  color: #333;
+  color: var(--main-color);
   background: white;
 }
 

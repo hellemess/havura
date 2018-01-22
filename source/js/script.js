@@ -8,12 +8,14 @@ const menuList = menu.querySelector('.header__menu-list');
 
 menu.classList.remove('header__nav--no-js');
 
-menuToggle.addEventListener('click', () => {
+const toggleMenu = () => {
   menuToggle.classList.toggle('header__menu-toggle--close');
-});
+};
+
+menuToggle.addEventListener('click', toggleMenu);
 
 menuToggle.addEventListener('keydown', (evt) => {
   if (isActivationEvent(evt)) {
-    menuToggle.classList.toggle('header__menu-toggle--close');
+    toggleMenu;
   }
 });

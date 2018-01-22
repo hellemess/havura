@@ -8,6 +8,8 @@ const autoprefixer = require('autoprefixer');
 const csso = require('gulp-csso');
 const jsmin = require('gulp-jsmin');
 const svgmin = require('gulp-svgmin');
+const imagemin = require('gulp-imagemin');
+const del = require('del');
 const run = require('run-sequence');
 
 // html
@@ -36,13 +38,14 @@ gulp.task('css', () => {
 gulp.task('js', () => {
   return gulp.src('source/js/*.js')
     .pipe(jsmin())
-    .pipe(gulp.dest('build/js'));
+    .pipe(gulp.dest('build/js'))
+    .pipe(server.stream());
 });
 
 // fonts
 
 gulp.task('fonts', () => {
-  return gulp.src('source/fonts/*.{woff2, woff}')
+  return gulp.src('source/fonts/*.{woff2,woff}')
     .pipe(gulp.dest('build/fonts'))
     .pipe(server.stream());
 });
@@ -56,12 +59,28 @@ gulp.task('svg', () => {
     .pipe(server.stream());
 });
 
+gulp.task('images', () => {
+  return gulp.src('source/img/*.{jpg,png}')
+    .pipe(imagemin([
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 3})
+    ]))
+    .pipe(gulp.dest('build/img'))
+    .pipe(server.stream());
+})
+
 // build
+
+gulp.task('clear', () => {
+  return del('build');
+});
 
 gulp.task('build', () => {
   run(
+    'clear',
     'fonts',
     'svg',
+    'images',
     'css',
     'js',
     'html'
@@ -80,8 +99,9 @@ gulp.task('watch', () => {
     server: 'build/'
   });
 
-  gulp.watch('source/fonts/*.{woff2, woff}', ['fonts']);
+  gulp.watch('source/fonts/*.{woff2,woff}', ['fonts']);
   gulp.watch('source/img/*.svg', ['svg']);
+  gulp.watch('source/img/*.{jpg,png}', ['images']);
   gulp.watch('source/css/**/*.css', ['css']);
   gulp.watch('source/js/*.js', ['js']);
   gulp.watch('source/*.html', ['update']);
