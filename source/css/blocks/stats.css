@@ -1,0 +1,55 @@
+.stats {
+  width: 270px;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+
+  text-align: center;
+}
+
+.stats__item {
+  margin-top: 24px;
+
+  list-style: none;
+
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+
+.stats__item:nth-child(2n-1) {
+  background-position: 15% 0;
+}
+
+.stats__item:nth-child(2n) {
+  background-position: 80% 0;
+}
+
+.stats__item--conferences {
+  background-image: url('../img/icon-conferences.svg');
+}
+
+.stats__item--trip {
+  background-image: url('../img/icon-trip.svg');
+}
+
+.stats__item--children {
+  background-image: url('../img/icon-children.svg');
+}
+
+.stats__item--videos {
+  background-image: url('../img/icon-videos.svg');
+}
+
+.stats__item--materials {
+  background-image: url('../img/icon-materials.svg');
+}
+
+.stats__number {
+  display: block;
+
+  font-weight: bold;
+  font-size: 72px;
+
+  color: black;
+}
