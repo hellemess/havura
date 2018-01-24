@@ -18,7 +18,7 @@
 }
 
 .stats__item:nth-child(2n-1) {
-  background-position: 15% 0;
+  background-position: 25% 0;
 }
 
 .stats__item:nth-child(2n) {

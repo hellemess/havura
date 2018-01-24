@@ -1,0 +1,129 @@
+.feedback {
+  width: 82%;
+  margin-top: 24px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.feedback__toggle {
+  display: flex;
+  max-width: 310px;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: var(--yellow-3);
+  background: black;
+}
+
+.feedback--no-js .feedback__toggle {
+  display: none;
+}
+
+.feedback__option {
+  width: 50%;
+  padding: 4px;
+
+  border: 3px solid transparent;
+}
+
+.feedback__option:focus {
+  border-color: var(--yellow-1);
+  outline: none;
+}
+
+.feedback__option:hover {
+  color: var(--yellow-1);
+}
+
+.feedback__toggle input:checked + .feedback__option {
+  color: black;
+  background: var(--yellow-3);
+}
+
+.feedback__toggle input:checked + .feedback__option:hover {
+  background: var(--yellow-1);
+}
+
+.feedback__selection {
+  display: none;
+}
+
+.feedback--no-js .feedback__selection {
+  display: block;
+}
+
+.feedback__selection--show {
+  display: block;
+}
+
+.feedback__heading {
+  display: none;
+  margin-top: 48px;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: black;
+}
+
+.feedback--no-js .feedback__heading {
+  display: block;
+}
+
+.feedback__item {
+  position: relative;
+
+  margin-top: 24px;
+  padding-top: 32px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+
+  color: black;
+  background: var(--yellow-3);
+  box-shadow: 3px 3px 0 0 var(--yellow-1);
+}
+
+.feedback__item::before {
+  content: '';
+
+  position: absolute;
+  top: -15px;
+  left: -12px;
+
+  width: 50px;
+  height: 50px;
+
+  background: transparent url('../img/icon-quote.svg') no-repeat 0 0;
+  background-size: contain;
+}
+
+.feedback__quote {
+  margin: 0;
+}
+
+.feedback__source {
+  display: block;
+  margin-top: 24px;
+
+  text-align: right;
+}
+
+.feedback__name {
+  display: block;
+
+  font-weight: bold;
+}
+
+.feedback__name::before {
+  content: '— ';
+
+  font-weight: normal;
+}

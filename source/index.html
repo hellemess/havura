@@ -85,8 +85,8 @@
       </div>
       <div class="section__container  section__container--colored  section__container--distance-learning">
         <p class="section__paragraph">Дистанционное образование — выход для тех, у кого нет возможности посещать занятия по еврейской традиции и еврейской истории. Ресурсный центр организует обучающие соревнования для школьников и выпускает учебные материалы и развивающие игры для взрослых и детей. Если вы автор учебных и методических материалов, мы будем рады опубликовать ваши работы!</p>
-        <a class="section__btn" href="#" title="Посмотреть материалы">Библиотека</a>
-        <a class="section__btn" href="#" title="Предложить материал">Редакция</a>
+        <a class="btn" href="#" title="Посмотреть материалы">Библиотека</a>
+        <a class="btn" href="#" title="Предложить материал">Редакция</a>
       </div>
     </section>
     <section class="section">
@@ -114,60 +114,63 @@
         </li>
       </ul>
     </section>
-    <section class="feedback">
+    <section class="feedback  feedback--no-js">
       <h2 class="visually-hidden">Отзывы</h2>
-      <input class="feedback__input" type="radio" name="show" id="adults" checked>
-      <label class="feedback__toggle" for="adults">Отзывы взрослых</label>
-      <input class="feedback__input" type="radio" name="show" id="schoolchildren">
-      <label class="feedback__toggle" for="schoolchildren">Отзывы школьников</label>
-      <section class="feedback__selection  feedback__selection--adults">
-        <h3 class="visually-hidden">Отзывы взрослых</h3>
+      <div class="feedback__toggle">
+        <input class="visually-hidden" type="radio" name="show" id="adults" checked>
+        <label class="feedback__option" for="adults" tabindex="0">Отзывы взрослых</label>
+        <input class="visually-hidden" type="radio" name="show" id="schoolchildren">
+        <label class="feedback__option" for="schoolchildren" tabindex="0">Отзывы школьников</label>
+      </div>
+      <section class="feedback__selection  feedback__selection--show">
+        <h3 class="feedback__heading">Отзывы взрослых</h3>
         <article class="feedback__item">
           <blockquote class="feedback__quote">Ресурсный центр еврейского образования изменил мою жизнь. Я люблю эту организацию и надеюсь работать в ней до самой старости.</blockquote>
-          <cite class="feedback__source">Полина Широкова, «Адаин Ло»</cite>
+          <cite class="feedback__source">
+            <span class="feedback__name">Полина Широкова,</span>
+            «Адаин Ло»
+          </cite>
         </article>
         <article class="feedback__item">
           <blockquote class="feedback__quote">В едином сусличном порыве слились еврейские организации, чтобы под эгидой Ресурсного центра организовать День еврейских знаний в Санкт-Петербурге, узнать много нового о еврейском мире, посетить чудесные мастер-классы и лекции.</blockquote>
-          <cite class="feedback__source">Анастасия Ванинен, «Великолукский мясокомбинат»</cite>
+          <cite class="feedback__source">
+            <span class="feedback__name">Анастасия Ванинен,</span>
+            «Великолукский мясокомбинат»
+          </cite>
         </article>
         <article class="feedback__item">
           <blockquote class="feedback__quote">Ресурсный центр предоставляет педагогам и руководителям еврейских организаций невероятные возможности для профессионального роста и развития, а также преподносит еврейское образование как источник массы любопытных сведений.</blockquote>
-          <cite class="feedback__source">Алла Пугачева, «Золотой граммофон»</cite>
+          <cite class="feedback__source">
+            <span class="feedback__name">Алла Пугачева,</span>
+            «Золотой граммофон»
+          </cite>
         </article>
       </section>
-      <section class="feedback__selection  feedback__selection--schoolchildren">
-        <h3 class="visually-hidden">Отзывы школьников</h3>
+      <section class="feedback__selection">
+        <h3 class="feedback__heading">Отзывы школьников</h3>
         <article class="feedback__item">
           <blockquote class="feedback__quote">Я впервые выезжала в поездку такого масштаба. К тому же эта была поучительная поездка, так как за всю поездку мы получали огромный поток знаний, в особенности затрагивающих историю евреев, что является огромным плюсом для нас. Программа поездки научила нас быть активными и общительными. Выпала огромная возможность пообщаться с людьми с других стран и узнать что-то новое.</blockquote>
-          <cite class="feedback__source">Юлия Юнгинштейн, 17 лет, Караганда</cite>
+          <cite class="feedback__source">
+            <span class="feedback__name">Юлия Юнгинштейн,</span>
+            17 лет, Караганда
+          </cite>
         </article>
         <article class="feedback__item">
           <blockquote class="feedback__quote">Поездка в Беларусь была одним из лучших событий в моей жизни. Она очень запомнилась мне яркими впечатлениями, новыми знакомствами, комфортабельным местом всего пребывания, интересными экскурсиями. Благодаря этой поездке значительно расширился кругозор и список друзей во «Вконтакте».</blockquote>
-          <cite class="feedback__source">Артём Халафтаев, 15 лет, Новосибирск</cite>
+          <cite class="feedback__source">
+            <span class="feedback__name">Артём Халафтаев,</span>
+            15 лет, Новосибирск
+          </cite>
         </article>
         <article class="feedback__item">
           <blockquote class="feedback__quote">«Маса Шорашим» — отличная поездка, вдохновившая меня углубиться в еврейскую культуру и историю. После этого проекта у меня остались только положительные впечатления, наши замечательные организаторы и мадрихи не давали нам морально и психически «загнаться» после очень трогательных экскурсий, устраивая нам очень интересную разрядку по вечерам.</blockquote>
-          <cite class="feedback__source">Анна Цыгановская, 16 лет, Москва</cite>
+          <cite class="feedback__source">
+            <span class="feedback__name">Анна Цыгановская,</span>
+            16 лет, Москва
+          </cite>
         </article>
       </section>
-      <button class="feedback__btn" type="button">Оставить отзыв</button>
-      <form class="feedback__form" action="#" method="post">
-        <label class="feedback__label" for="feedback-name">Имя</label>
-        <input class="feedback__input" type="text" name="feedback-name" id="feedback-name" required>
-        <label class="feedback__label" for="feedback-last-name">Фамилия</label>
-        <input class="feedback__input" type="text" name="feedback-last-name" id="feedback-last-name" required>
-        <label class="feedback__label" for="feedback-age">Возраст</label>
-        <input class="feedback__input" type="number" name="feedback-age" id="feedback-age" required>
-        <label class="feedback__label" for="feedback-city">Город</label>
-        <input class="feedback__input" type="text" name="feedback-city" id="feedback-city" required>
-        <label class="feedback__label" for="feedback-organization">Какую организацию вы представляете?</label>
-        <input class="feedback__input" type="text" name="feedback-organization" id="feedback-organization" required>
-        <label class="feedback__label" for="feedback-contacts">Контакты</label>
-        <input class="feedback__input" type="text" name="feedback-contacts" id="feedback-contacts">
-        <label class="feedback__label" for="feedback-content">Текст отзыва</label>
-        <textarea class="feedback__textarea" name="feedback-content" id="feedback-content" required></textarea>
-        <button class="feedback__btn" type="submit">Оставить отзыв</button>
-      </form>
+      <button class="btn" type="button">Оставить отзыв</button>
     </section>
     <section class="section">
       <h2 class="section__heading">Нас поддерживают</h2>
@@ -264,6 +267,23 @@
       </li>
     </ul>
   </footer>
+  <form class="form" action="#" method="post">
+    <label class="form__label" for="feedback-name">Имя</label>
+    <input class="form__input" type="text" name="feedback-name" id="feedback-name" required>
+    <label class="form__label" for="feedback-last-name">Фамилия</label>
+    <input class="form__input" type="text" name="feedback-last-name" id="feedback-last-name" required>
+    <label class="form__label" for="feedback-age">Возраст</label>
+    <input class="form__input" type="number" name="feedback-age" id="feedback-age" required>
+    <label class="form__label" for="feedback-city">Город</label>
+    <input class="form__input" type="text" name="feedback-city" id="feedback-city" required>
+    <label class="form__label" for="feedback-organization">Какую организацию вы представляете?</label>
+    <input class="form__input" type="text" name="feedback-organization" id="feedback-organization" required>
+    <label class="form__label" for="feedback-contacts">Контакты</label>
+    <input class="form__input" type="text" name="feedback-contacts" id="feedback-contacts">
+    <label class="form__label" for="feedback-content">Текст отзыва</label>
+    <textarea class="form__textarea" name="feedback-content" id="feedback-content" required></textarea>
+    <button class="form__btn" type="submit">Оставить отзыв</button>
+  </form>
   <script src="js/script.js"></script>
 </body>
 </html>
