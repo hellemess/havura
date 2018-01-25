@@ -1,0 +1,90 @@
+
+.footer {
+  margin-top: 48px;
+  padding-top: 24px;
+  padding-right: 8%;
+  padding-bottom: 24px;
+  padding-left: 8%;
+
+  color: white;
+  background: var(--main-color);
+}
+
+.footer__logo {
+  display: none;
+}
+
+.footer__menu-list,
+.footer__submenu-list,
+.footer__documents {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__menu-item,
+.footer__submenu-item,
+.footer__documents-item {
+  list-style: none;
+}
+
+.footer__menu-item {
+  margin-top: 24px;
+}
+
+.footer__menu-link,
+.footer__submenu-link,
+.footer__documents-link {
+  padding-right: 3px;
+  padding-left: 3px;
+
+  text-decoration: none;
+
+  color: white;
+  border: 3px solid transparent;
+}
+
+.footer__menu-link:focus,
+.footer__submenu-link:focus,
+.footer__documents-link:focus {
+  border-color: var(--yellow-1);
+  outline: none;
+}
+
+.footer__menu-link:hover {
+  text-decoration: underline;
+  text-decoration-skip: ink;
+}
+
+.footer__menu-link {
+  font-weight: bold;
+
+  color: var(--yellow-1);
+}
+
+.footer__submenu-link:hover,
+.footer__documents-link:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__documents {
+  margin-top: 24px;
+}
+
+.footer__documents-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__copyright {
+  display: flex;
+  margin-top: 24px;
+  padding-right: 3px;
+  padding-left: 3px;
+
+  justify-content: flex-end;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__copyright-symbol {
+  margin-right: 6px;
+}

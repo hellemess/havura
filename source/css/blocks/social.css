@@ -1,0 +1,24 @@
+.social__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  justify-content: space-between;
+}
+
+.social__item {
+  list-style: none;
+}
+
+.social__link:focus {
+  outline: none;
+}
+
+.social__link svg {
+  fill: white;
+}
+
+.social__link:focus svg,
+.social__link:hover svg {
+  fill: var(--yellow-1);
+}
