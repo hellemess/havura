@@ -1,6 +1,12 @@
 @import 'variables.css';
 @import 'scaffolding.css';
 
+@import 'blocks/btn.css';
+
 @import 'blocks/donation.css';
 @import 'blocks/header.css';
 @import 'blocks/opening.css';
+@import 'blocks/section.css';
+@import 'blocks/stats.css';
+@import 'blocks/feedback.css';
+@import 'blocks/funds.css';

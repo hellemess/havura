@@ -1,0 +1,32 @@
+.funds {
+  width: 84%;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+}
+
+.funds__item {
+  margin-top: 48px;
+
+  list-style: none;
+}
+
+.funds__link {
+  display: flex;
+
+  justify-content: center;
+
+  opacity: 0.75;
+  filter: grayscale(1);
+}
+
+.funds__link:focus,
+.funds__link:hover {
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+.funds__link:focus {
+  outline: 0;
+}
