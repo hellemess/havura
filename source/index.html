@@ -36,7 +36,6 @@
   <header class="header">
     <h1 class="visually-hidden">Ресурсный центр еврейского образования</h1>
     <nav class="header__nav  header__nav--no-js">
-      <a class="donation" href="#">Сделать пожертвование</a>
       <button class="header__menu-toggle" type="button" aria-label="Открыть меню"></button>
       <ul class="header__menu-list">
         <li class="header__menu-item">
@@ -312,6 +311,7 @@
     </div>
   </footer>
   <form class="form" action="#" method="post">
+    <button class="form__close" type="button" aria-label="Закрыть диалоговое окно"></button>
     <label class="form__label" for="feedback-name">Имя</label>
     <input class="form__input" type="text" name="feedback-name" id="feedback-name" required>
     <label class="form__label" for="feedback-last-name">Фамилия</label>
@@ -326,7 +326,7 @@
     <input class="form__input" type="text" name="feedback-contacts" id="feedback-contacts">
     <label class="form__label" for="feedback-content">Текст отзыва</label>
     <textarea class="form__textarea" name="feedback-content" id="feedback-content" required></textarea>
-    <button class="form__btn" type="submit">Оставить отзыв</button>
+    <button class="btn" type="submit">Оставить отзыв</button>
   </form>
   <script src="js/script.js"></script>
 </body>

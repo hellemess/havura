@@ -1,37 +1,72 @@
-const ENTER = 13;
+window.script = (() => {
+  const ENTER = 13;
+  const ESC = 27;
 
-const isActivationEvent = (evt) => evt.keyCode && evt.keyCode === ENTER;
+  const isActivationEvent = (evt) => evt.keyCode && evt.keyCode === ENTER;
+  const isDeactivationEvent = (evt) => evt.keyCode && evt.keyCode === ESC;
 
-// открытие и закрытие меню сайта по нажанию на иконку меню
+  const addHandler = (element, action) => {
+    element.addEventListener('click', action);
 
-const menu = document.querySelector('.header__nav');
-const menuToggle = menu.querySelector('.header__menu-toggle');
-const menuList = menu.querySelector('.header__menu-list');
+    element.addEventListener('keydown', (evt) => {
+      if (isActivationEvent(evt)) {
+        action;
+      }
+    });
+  };
 
-menu.classList.remove('header__nav--no-js');
+  // открытие и закрытие меню сайта по нажанию на иконку меню
 
-const toggleMenu = () => {
-  menuToggle.classList.toggle('header__menu-toggle--close');
-};
+  const menu = document.querySelector('.header__nav');
+  const menuToggle = menu.querySelector('.header__menu-toggle');
+  const menuList = menu.querySelector('.header__menu-list');
 
-menuToggle.addEventListener('click', toggleMenu);
+  menu.classList.remove('header__nav--no-js');
 
-menuToggle.addEventListener('keydown', (evt) => {
-  if (isActivationEvent(evt)) {
-    toggleMenu;
-  }
-});
+  const toggleMenu = () => {
+    menuToggle.classList.toggle('header__menu-toggle--close');
+  };
 
-// переключение между отзывами взрослых и школьников
+  addHandler(menuToggle, toggleMenu);
 
-const feedback = document.querySelector('.feedback');
-const feedbackToggle = feedback.querySelector('.feedback__toggle');
-const feedbackSelections = feedback.querySelectorAll('.feedback__selection');
+  // переключение между отзывами взрослых и школьников
 
-feedback.classList.remove('feedback--no-js');
+  const feedback = document.querySelector('.feedback');
+  const feedbackToggle = feedback.querySelector('.feedback__toggle');
+  const feedbackSelections = feedback.querySelectorAll('.feedback__selection');
 
-feedbackToggle.addEventListener('change', () => {
-  feedbackSelections.forEach((it) => {
-    it.classList.toggle('feedback__selection--show');
+  feedback.classList.remove('feedback--no-js');
+
+  feedbackToggle.addEventListener('change', () => {
+    feedbackSelections.forEach((it) => {
+      it.classList.toggle('feedback__selection--show');
+    });
   });
-});
+
+  // открытие и закрытие формы отправки отзывами
+
+  const feedbackButton = document.querySelector('.feedback .btn');
+  const feedbackForm = document.querySelector('.form');
+  const feedbackFormClose = feedbackForm.querySelector('.form__close');
+  const feedbackFormName = feedbackForm.querySelector('.form__input');
+
+  const closeForm = () => {
+    feedbackForm.classList.remove('form--show');
+  }
+
+  const openForm = (evt) => {
+    evt.preventDefault();
+    feedbackForm.classList.add('form--show');
+    feedbackFormName.focus();
+  };
+
+  addHandler(feedbackButton, openForm);
+  addHandler(feedbackFormClose, closeForm);
+  feedbackForm.addEventListener('submit', closeForm);
+
+  document.addEventListener('keydown', (evt) => {
+    if (isDeactivationEvent(evt)) {
+      closeForm();
+    }
+  });
+})();

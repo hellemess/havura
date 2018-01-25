@@ -1,3 +1,130 @@
 .form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+
   display: none;
+  width: 90%;
+  max-height: 90vh;
+  padding: 16px;
+  overflow-y: scroll;
+
+  transform: translate(-50%, -50%);
+
+  background: white;
+  border: 4px solid transparent;
+  box-shadow:
+    0 0 0 3px var(--yellow-1),
+    0 0 0 6px black;
+}
+
+.form::-webkit-scrollbar {
+  width: 6px;
+}
+
+.form::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.form::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.form--show {
+  display: block;
+}
+
+.form__close {
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  z-index: 1;
+
+  width: 40px;
+  height: 40px;
+  padding: 0;
+
+  background: none;
+  border: none;
+  border-radius: 50%;
+}
+
+.form__close::before,
+.form__close::after {
+  content: '';
+
+  position: absolute;
+  top: 19px;
+  left: 5px;
+
+  width: 30px;
+  height: 3px;
+
+  background: black;
+}
+
+.form__close::before {
+  transform: rotate(45deg);
+}
+
+.form__close::after {
+  transform: rotate(-45deg);
+}
+
+.form__close:focus {
+  background: var(--yellow-1);
+  outline: none;
+}
+
+.form__close:hover {
+  background: var(--yellow-1);
+}
+
+.form__label,
+.form__input,
+.form__textarea {
+  display: block;
+  width: 100%;
+}
+
+.form__label {
+  margin-top: 12px;
+  padding-bottom: 5px;
+
+  font-size: 16px;
+}
+
+.form__label:first-of-type {
+  margin-top: 45px;
+}
+
+.form__input,
+.form__textarea {
+  padding: 3px;
+  font: inherit;
+  border: none;
+}
+
+.form__input {
+  box-shadow: 0 2px 0 0 var(--main-color);
+}
+
+.form__input:hover {
+  box-shadow: 0 2px 0 0 var(--yellow-1);
+}
+
+.form__input:focus,
+.form__textarea:focus {
+  box-shadow: 0 0 0 2px var(--yellow-1);
+  outline: none;
+}
+
+.form__textarea {
+  box-shadow: 0 0 0 2px var(--main-color);
+}
+
+.form__textarea:hover {
+  box-shadow: 0 0 0 2px var(--yellow-1);
 }
