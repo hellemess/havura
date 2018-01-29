@@ -12,7 +12,7 @@
   text-align: center;
 
   color: white;
-  background: black url('../img/background.png') repeat 0 0;
+  background: var(--main-color);
 }
 
 .opening__logo {
@@ -73,5 +73,11 @@
 @media (min-width: 375px) {
   .opening__heading {
     font-size: 24px;
+  }
+}
+
+@media (min-width: 410px) {
+  .opening__heading {
+    font-size: 28px;
   }
 }

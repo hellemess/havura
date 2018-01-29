@@ -121,10 +121,14 @@
 
 .feedback__quote {
   margin: 0;
-  margin-top: 8px;
+  margin-top: 29px;
   margin-right: 19px;
 
   text-align: left;
+}
+
+.feedback__tag + .feedback__quote {
+  margin-top: 7px;
 }
 
 .feedback__source {
