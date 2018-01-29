@@ -81,10 +81,12 @@
   position: relative;
 
   margin-top: 24px;
-  padding-top: 32px;
-  padding-right: 24px;
+  padding-top: 5px;
+  padding-right: 5px;
   padding-bottom: 16px;
   padding-left: 24px;
+
+  text-align: right;
 
   color: black;
   background: var(--yellow-3);
@@ -105,15 +107,29 @@
   background-size: contain;
 }
 
+.feedback__tag {
+  padding-right: 5px;
+  padding-left: 5px;
+
+  font-style: italic;
+  font-size: 14px;
+  text-decoration: none;
+
+  color: black;
+  background: var(--yellow-2);
+}
+
 .feedback__quote {
   margin: 0;
+  margin-top: 8px;
+  margin-right: 19px;
+
+  text-align: left;
 }
 
 .feedback__source {
   display: block;
   margin-top: 24px;
-
-  text-align: right;
 }
 
 .feedback__name {

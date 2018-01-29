@@ -1,6 +1,6 @@
 .opening {
   display: flex;
-  min-height: 84vh;
+  min-height: 97vh;
   padding-top: 70px;
   padding-right: 8%;
   padding-bottom: 25px;
@@ -9,7 +9,6 @@
   flex-direction: column;
   justify-content: space-between;
 
-  font-weight: bold;
   text-align: center;
 
   color: white;
@@ -20,7 +19,9 @@
   display: none;
 }
 
+.opening__heading,
 .opening__greeting,
+.opening__offers,
 .opening__stats {
   width: 100%;
   max-width: 350px;
@@ -29,8 +30,18 @@
   margin-left: auto;
 }
 
-.opening__greeting {
-  font-size: 30px;
+.opening__heading {
+  font-size: 20px;
+}
+
+.opening__offers {
+  padding: 0;
+}
+
+.opening__offers-item {
+  position: relative;
+
+  list-style: none;
 }
 
 .opening__stats {
@@ -47,5 +58,6 @@
 .opening__stats-number {
   display: block;
 
+  font-weight: bold;
   font-size: 36px;
 }

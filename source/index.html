@@ -34,7 +34,6 @@
     </symbol>
   </svg>
   <header class="header">
-    <h1 class="visually-hidden">Ресурсный центр еврейского образования</h1>
     <nav class="header__nav  header__nav--no-js">
       <button class="header__menu-toggle" type="button" aria-label="Открыть меню"></button>
       <ul class="header__menu-list">
@@ -75,10 +74,21 @@
   <main class="content">
     <section class="opening">
       <img class="opening__logo" src="#" alt="Ресурсный центр еврейского образования" width="100" height="100">
-      <p class="opening__greeting">
-        Интересуетесь еврейским образованием?
-        <br>Мы организуем обучение для вас.
-      </p>
+      <div class="opening__container">
+        <h1 class="opening__heading">Ресурсный центр еврейского образования</h1>
+        <p class="opening__greeting">Мы организуем обучение для вас.</p>
+      </div>
+      <ul class="opening__offers">
+        <li class="opening__offers-item">
+          <a class="btn  btn--yellow" href="#">Детям</a>
+        </li>
+        <li class="opening__offers-item">
+          <a class="btn  btn--yellow" href="#">Взрослым</a>
+        </li>
+        <li class="opening__offers-item">
+          <a class="btn  btn--yellow" href="#">Организациям</a>
+        </li>
+      </ul>
       <ul class="opening__stats">
         <li class="opening__stats-item">
           <span class="opening__stats-number">2000</span>
@@ -174,6 +184,7 @@
       <section class="feedback__selection">
         <h3 class="feedback__heading">Отзывы школьников</h3>
         <article class="feedback__item">
+          <a class="feedback__tag" href="#">«Маса Шорашим»</a>
           <blockquote class="feedback__quote">Я впервые выезжала в поездку такого масштаба. К тому же эта была поучительная поездка, так как за всю поездку мы получали огромный поток знаний, в особенности затрагивающих историю евреев, что является огромным плюсом для нас. Программа поездки научила нас быть активными и общительными. Выпала огромная возможность пообщаться с людьми с других стран и узнать что-то новое.</blockquote>
           <cite class="feedback__source">
             <span class="feedback__name">Юлия Юнгинштейн,</span>
@@ -181,6 +192,7 @@
           </cite>
         </article>
         <article class="feedback__item">
+          <a class="feedback__tag" href="#">«Маса Шорашим»</a>
           <blockquote class="feedback__quote">Поездка в Беларусь была одним из лучших событий в моей жизни. Она очень запомнилась мне яркими впечатлениями, новыми знакомствами, комфортабельным местом всего пребывания, интересными экскурсиями. Благодаря этой поездке значительно расширился кругозор и список друзей во «Вконтакте».</blockquote>
           <cite class="feedback__source">
             <span class="feedback__name">Артём Халафтаев,</span>
@@ -188,6 +200,7 @@
           </cite>
         </article>
         <article class="feedback__item">
+          <a class="feedback__tag" href="#">«Маса Шорашим»</a>
           <blockquote class="feedback__quote">«Маса Шорашим» — отличная поездка, вдохновившая меня углубиться в еврейскую культуру и историю. После этого проекта у меня остались только положительные впечатления, наши замечательные организаторы и мадрихи не давали нам морально и психически «загнаться» после очень трогательных экскурсий, устраивая нам очень интересную разрядку по вечерам.</blockquote>
           <cite class="feedback__source">
             <span class="feedback__name">Анна Цыгановская,</span>
@@ -218,6 +231,36 @@
         <li class="funds__item">
           <a class="funds__link" href="#">
             <img src="img/logo-uja.svg" alt="Нью-Йоркская еврейская федерация" width="200" height="60">
+          </a>
+        </li>
+        <li class="funds__item">
+          <a class="funds__link" href="#">
+            <img src="img/logo-aleph.svg" alt="Организация «Алеф Сосайети»" width="100" height="73">
+          </a>
+        </li>
+        <li class="funds__item">
+          <a class="funds__link" href="#">
+            <img src="img/logo-jafi-nw.svg" alt="АНО БЕО «Северо-Запад»" width="200" height="50">
+          </a>
+        </li>
+        <li class="funds__item">
+          <a class="funds__link" href="#">
+            <img src="img/logo-jafi.svg" alt="Еврейское агентство «Сохнут»" width="200" height="46">
+          </a>
+        </li>
+        <li class="funds__item">
+          <a class="funds__link" href="#">
+            <img src="img/logo-jhf.svg" alt="Голландский еврейский гуманитарный фонд" width="142" height="150">
+          </a>
+        </li>
+        <li class="funds__item">
+          <a class="funds__link" href="#">
+            <img src="img/logo-pj.svg" alt="«Пижамная библиотечка»" width="200" height="67">
+          </a>
+        </li>
+        <li class="funds__item">
+          <a class="funds__link" href="#">
+            <img src="img/logo-rjc.svg" alt="Региональный еврейский конгресс в Санкт-Петербурге" width="100" height="100">
           </a>
         </li>
       </ul>
@@ -310,24 +353,6 @@
       Ресурсный центр еврейского образования, 2009–2018
     </div>
   </footer>
-  <form class="form" action="#" method="post">
-    <button class="form__close" type="button" aria-label="Закрыть диалоговое окно"></button>
-    <label class="form__label" for="feedback-name">Имя</label>
-    <input class="form__input" type="text" name="feedback-name" id="feedback-name" required>
-    <label class="form__label" for="feedback-last-name">Фамилия</label>
-    <input class="form__input" type="text" name="feedback-last-name" id="feedback-last-name" required>
-    <label class="form__label" for="feedback-age">Возраст</label>
-    <input class="form__input" type="number" name="feedback-age" id="feedback-age" required>
-    <label class="form__label" for="feedback-city">Город</label>
-    <input class="form__input" type="text" name="feedback-city" id="feedback-city" required>
-    <label class="form__label" for="feedback-organization">Какую организацию вы представляете?</label>
-    <input class="form__input" type="text" name="feedback-organization" id="feedback-organization" required>
-    <label class="form__label" for="feedback-contacts">Контакты</label>
-    <input class="form__input" type="text" name="feedback-contacts" id="feedback-contacts">
-    <label class="form__label" for="feedback-content">Текст отзыва</label>
-    <textarea class="form__textarea" name="feedback-content" id="feedback-content" required></textarea>
-    <button class="btn" type="submit">Оставить отзыв</button>
-  </form>
   <script src="js/script.js"></script>
 </body>
 </html>

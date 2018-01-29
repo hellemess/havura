@@ -1,7 +1,7 @@
 .header__menu-toggle {
   position: absolute;
   right: 0;
-  z-index: 1;
+  z-index: 2;
 
   width: 86px;
   height: 70px;
@@ -57,6 +57,7 @@
 
 .header__menu-list {
   position: absolute;
+  z-index: 1;
 
   display: none;
   width: 100%;

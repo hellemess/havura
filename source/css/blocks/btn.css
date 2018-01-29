@@ -30,3 +30,18 @@
 .btn:hover {
   color: var(--yellow-1);
 }
+
+.btn--yellow {
+  color: black;
+  background: var(--yellow-1);
+}
+
+.btn:focus {
+  border-color: black;
+  outline: 3px solid var(--yellow-1);
+}
+
+.btn:hover {
+  color: black;
+  background: var(--yellow-2);
+}
