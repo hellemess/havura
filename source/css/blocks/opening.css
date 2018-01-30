@@ -66,13 +66,13 @@
   font-size: 36px;
 }
 
-@media (min-width: 375px) {
+@media (--medium-mobile) {
   .opening__heading {
     font-size: 24px;
   }
 }
 
-@media (min-width: 410px) {
+@media (--large-mobile) {
   .opening__heading {
     font-size: 28px;
   }

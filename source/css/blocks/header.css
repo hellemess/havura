@@ -247,7 +247,7 @@
   box-shadow: 0 0 0 2px var(--yellow-1);
 }
 
-@media (min-width: 375px) {
+@media (--medium-mobile) {
   .header__menu-link,
   .header__submenu-link {
     padding-right: 55px;

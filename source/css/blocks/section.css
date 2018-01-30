@@ -56,13 +56,13 @@
   background-image: url('../img/icon-distance-learning.svg');
 }
 
-@media (min-width: 375px) {
+@media (--medium-mobile) {
   .section__heading {
     font-size: 26px;
   }
 }
 
-@media (min-width: 425px) {
+@media (--large-mobile) {
   .section__heading {
     font-size: 30px;
   }
