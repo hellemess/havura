@@ -121,7 +121,9 @@
 }
 
 .feedback__tag:focus {
-  outline: 3px solid var(--yellow-1);
+  background: var(--yellow-1);
+
+  outline: none;
 }
 
 .feedback__tag:hover {
