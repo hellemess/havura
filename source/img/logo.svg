@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 515 515" style="enable-background:new 0 0 515 515;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFE073;}
 	.st1{fill:#FFC600;}
-	.st2{fill:none;}
-	.st3{fill:none;stroke:#000000;stroke-width:22;stroke-linecap:round;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:22;stroke-linecap:round;stroke-miterlimit:10;}
 </style>
-<g id="Слой_2">
+<g id="Слой_2_1_">
 </g>
 <g id="Layer_1">
 	<polygon class="st0" points="201.3,505.4 160.5,485.4 100.5,452.4 18.5,336.4 18.5,214.4 43.5,131.4 115.5,56.4 206.5,19.4 	"/>
@@ -16,7 +16,7 @@
 		367.5,28.9 	"/>
 	<g>
 		<g>
-			<path d="M439.5,77.4c-48.4-48.4-112.6-75-181-75s-132.7,26.6-181,75c-48.4,48.4-75,112.6-75,181s26.6,132.7,75,181
+			<path class="st2" d="M439.5,77.4c-48.4-48.4-112.6-75-181-75s-132.7,26.6-181,75c-48.4,48.4-75,112.6-75,181s26.6,132.7,75,181
 				c48.4,48.4,112.6,75,181,75s132.7-26.6,181-75c48.4-48.4,75-112.6,75-181S487.9,125.8,439.5,77.4z M258.5,494
 				C128.6,494,22.9,388.3,22.9,258.4S128.6,22.8,258.5,22.8s235.6,105.7,235.6,235.6S388.4,494,258.5,494z"/>
 		</g>
@@ -35,8 +35,8 @@
 	</g>
 	<line class="st3" x1="198.5" y1="450.4" x2="198.5" y2="204.4"/>
 	<line class="st3" x1="201.3" y1="202.5" x2="463.3" y2="91.3"/>
-	<line class="st2" x1="198.9" y1="200.6" x2="302.8" y2="125.2"/>
-	<line class="st2" x1="332.3" y1="99.7" x2="355.9" y2="82.5"/>
+	<line class="st3" x1="198.9" y1="200.6" x2="302.8" y2="125.2"/>
+	<line class="st3" x1="332.3" y1="99.7" x2="355.9" y2="82.5"/>
 	<line class="st3" x1="196.7" y1="200.4" x2="71.3" y2="102.4"/>
 </g>
 </svg>
