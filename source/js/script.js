@@ -17,11 +17,10 @@ window.script = (() => {
 
   // открытие и закрытие меню сайта по нажанию на иконку меню
 
-  const menu = document.querySelector('.header__nav');
-  const menuToggle = menu.querySelector('.header__menu-toggle');
-  const menuList = menu.querySelector('.header__menu-list');
+  const header = document.querySelector('.header');
+  const menuToggle = header.querySelector('.header__menu-toggle');
 
-  menu.classList.remove('header__nav--no-js');
+  header.classList.remove('header--no-js');
 
   const toggleMenu = () => {
     menuToggle.classList.toggle('header__menu-toggle--close');
@@ -41,32 +40,5 @@ window.script = (() => {
     feedbackSelections.forEach((it) => {
       it.classList.toggle('feedback__selection--show');
     });
-  });
-
-  // открытие и закрытие формы отправки отзывами
-
-  const feedbackButton = document.querySelector('.feedback .btn');
-  const feedbackForm = document.querySelector('.form');
-  const feedbackFormClose = feedbackForm.querySelector('.form__close');
-  const feedbackFormName = feedbackForm.querySelector('.form__input');
-
-  const closeForm = () => {
-    feedbackForm.classList.remove('form--show');
-  }
-
-  const openForm = (evt) => {
-    evt.preventDefault();
-    feedbackForm.classList.add('form--show');
-    feedbackFormName.focus();
-  };
-
-  addHandler(feedbackButton, openForm);
-  addHandler(feedbackFormClose, closeForm);
-  feedbackForm.addEventListener('submit', closeForm);
-
-  document.addEventListener('keydown', (evt) => {
-    if (isDeactivationEvent(evt)) {
-      closeForm();
-    }
   });
 })();

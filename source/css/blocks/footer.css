@@ -47,6 +47,7 @@
 .footer__submenu-link:focus,
 .footer__documents-link:focus {
   border-color: var(--yellow-1);
+
   outline: none;
 }
 

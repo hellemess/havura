@@ -24,6 +24,7 @@
 
 .btn:focus {
   border-color: var(--yellow-1);
+
   outline: 3px solid black;
 }
 
@@ -36,12 +37,13 @@
   background: var(--yellow-1);
 }
 
-.btn:focus {
+.btn--yellow:focus {
   border-color: black;
+
   outline: 3px solid var(--yellow-1);
 }
 
-.btn:hover {
+.btn--yellow:hover {
   color: black;
-  background: var(--yellow-2);
+  background: white;
 }
