@@ -82,8 +82,8 @@
   position: relative;
 
   margin-top: 24px;
-  padding-top: 7px;
-  padding-right: 5px;
+  padding-top: 8px;
+  padding-right: 8px;
   padding-bottom: 16px;
   padding-left: 24px;
 
@@ -118,13 +118,10 @@
 
   color: black;
   background: var(--yellow-2);
-  border: 3px solid transparent;
 }
 
 .feedback__tag:focus {
-  border-color: var(--yellow-1);
-
-  outline: none;
+  outline: 3px solid var(--yellow-1);
 }
 
 .feedback__tag:hover {
