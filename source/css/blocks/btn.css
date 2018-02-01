@@ -45,5 +45,5 @@
 
 .btn--yellow:hover {
   color: black;
-  background: white;
+  background: var(--yellow-3);
 }

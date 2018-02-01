@@ -58,6 +58,8 @@
   padding: 0;
 
   justify-content: space-between;
+
+  font-weight: bold;
 }
 
 .opening__stats-item {
@@ -67,12 +69,66 @@
 .opening__stats-number {
   display: block;
 
-  font-weight: bold;
   font-size: 36px;
 }
 
 @media (--tablet) {
+  .opening {
+    height: 80vh;
+    padding-top: 20vh;
+    padding-right: 5%;
+    padding-left: 5%;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+
   .opening__logo {
     display: block;
+    width: 50%;
+  }
+
+  .opening__logo img {
+    width: 300px;
+    height: 100px;
+  }
+
+  .opening__greeting,
+  .opening__offers,
+  .opening__stats {
+    max-width: none;
+  }
+
+  .opening__greeting {
+    width: 42%;
+    margin: 0;
+
+    text-align: left;
+  }
+
+  .opening__offers {
+    display: flex;
+    width: 690px;
+
+    justify-content: space-between;
+  }
+
+  .opening__offers-item {
+    width: 31%;
+  }
+
+  .opening__offers-item a {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .opening__offers-item:first-child a {
+    margin-top: 40px;
+  }
+
+  .opening__stats {
+    width: 42%;
+    margin-right: 0;
   }
 }

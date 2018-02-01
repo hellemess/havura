@@ -33,16 +33,21 @@ window.script = (() => {
   if (document.documentElement.clientWidth > 750) {
     const menuLinks = header.querySelectorAll('.header__menu-link');
     const submenus = header.querySelectorAll('.header__submenu-list');
+    const submenuLinks = header.querySelectorAll('.header__submenu-link');
+
+    const refreshMenu = () => {
+      menuLinks.forEach((it) => {
+        it.style.background = 'transparent';
+      });
+
+      submenus.forEach((it) => {
+        it.classList.remove('header__submenu-list--show');
+      });
+    }
 
     menuLinks.forEach((it) => {
       it.addEventListener('focus', () => {
-        menuLinks.forEach((it) => {
-          it.style.background = 'transparent';
-        });
-
-        submenus.forEach((it) => {
-          it.classList.remove('header__submenu-list--show');
-        });
+        refreshMenu();
 
         it.style.background = 'rgba(0, 0, 0, 0.95)';
 
@@ -53,13 +58,15 @@ window.script = (() => {
 
       it.addEventListener('blur', (evt) => {
         if (evt.relatedTarget === null || !evt.relatedTarget.classList.contains('header__submenu-link')) {
-          menuLinks.forEach((it) => {
-            it.style.background = 'transparent';
-          });
+          refreshMenu();
+        }
+      });
+    });
 
-          submenus.forEach((it) => {
-            it.classList.remove('header__submenu-list--show');
-          });
+    submenuLinks.forEach((it) => {
+      it.addEventListener('blur', (evt) => {
+        if (evt.relatedTarget === null || !evt.relatedTarget.classList.contains('header__submenu-link')) {
+          refreshMenu();
         }
       });
     });
