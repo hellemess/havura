@@ -1,42 +1,163 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 515 515" style="enable-background:new 0 0 515 515;" xml:space="preserve">
-<style type="text/css">
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Слой_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 1715 550"
+   xml:space="preserve"
+   sodipodi:docname="logo.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   width="1715"
+   height="550"><metadata
+     id="metadata94"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs92" /><sodipodi:namedview
+     pagecolor="#333333"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
+     id="namedview90"
+     showgrid="false"
+     inkscape:zoom="0.51"
+     inkscape:cx="994.89038"
+     inkscape:cy="228.46345"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Слой_1" /><style
+     type="text/css"
+     id="style53">
 	.st0{fill:#FFE073;}
 	.st1{fill:#FFC600;}
 	.st2{fill:#FFFFFF;}
 	.st3{fill:none;stroke:#FFFFFF;stroke-width:22;stroke-linecap:round;stroke-miterlimit:10;}
-</style>
-<g id="Слой_2_1_">
-</g>
-<g id="Layer_1">
-	<polygon class="st0" points="201.3,505.4 160.5,485.4 100.5,452.4 18.5,336.4 18.5,214.4 43.5,131.4 115.5,56.4 206.5,19.4 	"/>
-	<polyline class="st1" points="375.5,38.4 454.5,105.4 513.4,234.2 480.5,366.3 403.5,460.4 326.5,505.4 198.5,499.4 198.5,16.3 
-		367.5,28.9 	"/>
-	<g>
-		<g>
-			<path class="st2" d="M439.5,77.4c-48.4-48.4-112.6-75-181-75s-132.7,26.6-181,75c-48.4,48.4-75,112.6-75,181s26.6,132.7,75,181
-				c48.4,48.4,112.6,75,181,75s132.7-26.6,181-75c48.4-48.4,75-112.6,75-181S487.9,125.8,439.5,77.4z M258.5,494
-				C128.6,494,22.9,388.3,22.9,258.4S128.6,22.8,258.5,22.8s235.6,105.7,235.6,235.6S388.4,494,258.5,494z"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path class="st2" d="M412.6,397.1c-4-4-10.5-4-14.4,0c-37.2,37.5-86.8,58.1-139.6,58.1c-5.6,0-10.2,4.6-10.2,10.2
-				s4.6,10.2,10.2,10.2c58.3,0,113-22.8,154.1-64.1C416.6,407.6,416.6,401.1,412.6,397.1z"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path class="st2" d="M442.7,353.7c-4.9-2.8-11.1-1.2-13.9,3.7c-1.4,2.4-2.9,4.9-4.4,7.2c-3,4.7-1.7,11.1,3.1,14.1
-				c1.7,1.1,3.6,1.6,5.5,1.6c3.4,0,6.6-1.7,8.6-4.7c1.7-2.6,3.3-5.3,4.9-8C449.2,362.7,447.5,356.5,442.7,353.7z"/>
-		</g>
-	</g>
-	<line class="st3" x1="198.5" y1="450.4" x2="198.5" y2="204.4"/>
-	<line class="st3" x1="201.3" y1="202.5" x2="463.3" y2="91.3"/>
-	<line class="st3" x1="198.9" y1="200.6" x2="302.8" y2="125.2"/>
-	<line class="st3" x1="332.3" y1="99.7" x2="355.9" y2="82.5"/>
-	<line class="st3" x1="196.7" y1="200.4" x2="71.3" y2="102.4"/>
-</g>
+</style><g
+     id="Слой_2_1_"
+     transform="translate(0,35)" /><g
+     id="Layer_1"
+     transform="translate(0,34.6)"><polygon
+       class="st0"
+       points="201.3,505.4 160.5,485.4 100.5,452.4 18.5,336.4 18.5,214.4 43.5,131.4 115.5,56.4 206.5,19.4 "
+       id="polygon56"
+       style="fill:#ffe073" /><polyline
+       class="st1"
+       points="375.5,38.4 454.5,105.4 513.4,234.2 480.5,366.3 403.5,460.4 326.5,505.4 198.5,499.4 198.5,16.3    367.5,28.9  "
+       id="polyline58"
+       style="fill:#ffc600" /><g
+       id="g64"><g
+         id="g62"><path
+           class="st2"
+           d="M 439.5,77.4 C 391.1,29 326.9,2.4 258.5,2.4 c -68.4,0 -132.7,26.6 -181,75 -48.4,48.4 -75,112.6 -75,181 0,68.4 26.6,132.7 75,181 48.4,48.4 112.6,75 181,75 68.4,0 132.7,-26.6 181,-75 48.4,-48.4 75,-112.6 75,-181 0,-68.4 -26.6,-132.6 -75,-181 z M 258.5,494 C 128.6,494 22.9,388.3 22.9,258.4 22.9,128.5 128.6,22.8 258.5,22.8 388.4,22.8 494.1,128.5 494.1,258.4 494.1,388.3 388.4,494 258.5,494 Z"
+           id="path60"
+           inkscape:connector-curvature="0"
+           style="fill:#ffffff" /></g></g><g
+       id="g70"><g
+         id="g68"><path
+           class="st2"
+           d="m 412.6,397.1 c -4,-4 -10.5,-4 -14.4,0 -37.2,37.5 -86.8,58.1 -139.6,58.1 -5.6,0 -10.2,4.6 -10.2,10.2 0,5.6 4.6,10.2 10.2,10.2 58.3,0 113,-22.8 154.1,-64.1 3.9,-3.9 3.9,-10.4 -0.1,-14.4 z"
+           id="path66"
+           inkscape:connector-curvature="0"
+           style="fill:#ffffff" /></g></g><g
+       id="g76"><g
+         id="g74"><path
+           class="st2"
+           d="m 442.7,353.7 c -4.9,-2.8 -11.1,-1.2 -13.9,3.7 -1.4,2.4 -2.9,4.9 -4.4,7.2 -3,4.7 -1.7,11.1 3.1,14.1 1.7,1.1 3.6,1.6 5.5,1.6 3.4,0 6.6,-1.7 8.6,-4.7 1.7,-2.6 3.3,-5.3 4.9,-8 2.7,-4.9 1,-11.1 -3.8,-13.9 z"
+           id="path72"
+           inkscape:connector-curvature="0"
+           style="fill:#ffffff" /></g></g><line
+       class="st3"
+       x1="198.5"
+       y1="450.39999"
+       x2="198.5"
+       y2="204.39999"
+       id="line78"
+       style="fill:none;stroke:#ffffff;stroke-width:22;stroke-linecap:round;stroke-miterlimit:10" /><line
+       class="st3"
+       x1="201.3"
+       y1="202.5"
+       x2="463.29999"
+       y2="91.300003"
+       id="line80"
+       style="fill:none;stroke:#ffffff;stroke-width:22;stroke-linecap:round;stroke-miterlimit:10" /><line
+       class="st3"
+       x1="198.89999"
+       y1="200.60001"
+       x2="302.79999"
+       y2="125.2"
+       id="line82"
+       style="fill:none;stroke:#ffffff;stroke-width:22;stroke-linecap:round;stroke-miterlimit:10" /><line
+       class="st3"
+       x1="332.29999"
+       y1="99.699997"
+       x2="355.89999"
+       y2="82.5"
+       id="line84"
+       style="fill:none;stroke:#ffffff;stroke-width:22;stroke-linecap:round;stroke-miterlimit:10" /><line
+       class="st3"
+       x1="196.7"
+       y1="200.39999"
+       x2="71.300003"
+       y2="102.4"
+       id="line86"
+       style="fill:none;stroke:#ffffff;stroke-width:22;stroke-linecap:round;stroke-miterlimit:10" /></g><text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:26.66666603px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75391263"
+     x="225.85515"
+     y="370.22739"
+     id="text108"><tspan
+       sodipodi:role="line"
+       id="tspan106"
+       x="225.85515"
+       y="393.82114"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;font-family:'zero 5';-inkscape-font-specification:'zero 5, ';fill:#ffffff;stroke-width:0.75391263" /></text>
+<text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:227.19529724px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.67988348"
+     x="563.96368"
+     y="443.22797"
+     id="text112"><tspan
+       sodipodi:role="line"
+       x="563.96368"
+       y="443.22797"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:396.00341797px;font-family:aMavickFont;-inkscape-font-specification:aMavickFont;fill:#ffffff;stroke-width:5.67988348"
+       id="tspan135">центр</tspan></text>
+<text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:208.04389954px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.20109749"
+     x="585.22888"
+     y="162.68396"
+     id="text145"><tspan
+       sodipodi:role="line"
+       id="tspan143"
+       x="585.22888"
+       y="162.68396"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:aMavickFont;-inkscape-font-specification:aMavickFont;fill:#ffffff;stroke-width:5.20109749">ресурсный</tspan></text>
+<text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.57611847px;line-height:1.25;font-family:aMavickFont;-inkscape-font-specification:aMavickFont;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.1394031"
+     x="593.92407"
+     y="548.401"
+     id="text149"><tspan
+       sodipodi:role="line"
+       id="tspan147"
+       x="593.92407"
+       y="548.401"
+       style="stroke-width:2.1394031">еврейского просвещения</tspan></text>
 </svg>

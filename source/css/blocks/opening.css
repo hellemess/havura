@@ -15,7 +15,10 @@
   background: var(--main-color);
 }
 
-.opening__heading,
+.opening__logo {
+  display: none;
+}
+
 .opening__greeting,
 .opening__offers,
 .opening__stats {
@@ -26,8 +29,10 @@
   margin-left: auto;
 }
 
-.opening__heading {
-  font-size: 20px;
+.opening__greeting {
+  margin-top: 12px;
+
+  font-size: 32px;
 }
 
 .opening__offers {
@@ -66,14 +71,8 @@
   font-size: 36px;
 }
 
-@media (--medium-mobile) {
-  .opening__heading {
-    font-size: 24px;
-  }
-}
-
-@media (--large-mobile) {
-  .opening__heading {
-    font-size: 27px;
+@media (--tablet) {
+  .opening__logo {
+    display: block;
   }
 }

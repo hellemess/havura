@@ -6,6 +6,5 @@
   --yellow-3: #FFE073;
 }
 
-@custom-media --medium-mobile (min-width: 375px);
-@custom-media --large-mobile (min-width: 410px);
+@custom-media --large-mobile (min-width: 405px);
 @custom-media --tablet (min-width: 768px);
