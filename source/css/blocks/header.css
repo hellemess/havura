@@ -269,7 +269,8 @@
   }
 
   .header--index {
-    padding-left: 13px;
+    padding-right: 5%;
+    padding-left: 4%;
   }
 
   .header--no-js.header--index {

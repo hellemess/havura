@@ -18,22 +18,21 @@
   box-shadow: 3px 3px 0 0 var(--main-color);
 }
 
-.section__paragraph {
-  margin: 0;
-  margin-top: 24px;
-}
-
 .section__container {
   padding-right: 8%;
   padding-bottom: 24px;
   padding-left: 8%;
+}
+
+.section__container--decorated {
+  padding-top: 115px;
 
   background-repeat: no-repeat;
   background-position: 50% 20px;
   background-size: 100px;
 }
 
-.section__container--colored:nth-of-type(2n-1) {
+.section__container--decorated:nth-of-type(2n-1) {
   background-color: var(--yellow-3);
 }
 
@@ -45,19 +44,63 @@
 }
 
 .section__container--jewish-world {
-  padding-top: 115px;
-
   background-image: url('../img/icon-jewish-world.svg');
 }
 
 .section__container--distance-learning {
-  padding-top: 115px;
-
   background-image: url('../img/icon-distance-learning.svg');
+}
+
+.section__paragraph {
+  margin: 0;
+  margin-top: 24px;
 }
 
 @media (--large-mobile) {
   .section__heading {
     font-size: 30px;
+  }
+}
+
+@media (--tablet) {
+  .section__heading {
+    width: auto;
+    margin-top: 35px;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .section__container {
+    padding-right: 5%;
+    padding-bottom: 35px;
+    padding-left: 5%;
+  }
+
+  .section__container--decorated {
+    padding-top: 1px;
+    padding-left: 22%;
+
+    background-position: 5% 40px;
+  }
+
+  .section__container--decorated:nth-of-type(2n) {
+    padding-right: 22%;
+    padding-left: 5%;
+
+    background-position: 95% 50%;
+  }
+
+  .section__paragraph {
+    margin-top: 35px;
+  }
+
+  .section__links {
+    display: flex;
+
+    justify-content: space-between;
+  }
+
+  .section__links a {
+    width: 35%;
   }
 }
