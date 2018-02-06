@@ -125,4 +125,13 @@
   .footer__menu-item:first-child {
     margin-top: 0;
   }
+
+  .footer__documents,
+  .footer__copyright {
+    width: 50%;
+  }
+
+  .footer__copyright {
+    justify-content: flex-end;
+  }
 }

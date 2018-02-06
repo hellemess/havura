@@ -80,14 +80,14 @@
     padding-top: 1px;
     padding-left: 22%;
 
-    background-position: 5% 40px;
+    background-position: 7% 40px;
   }
 
   .section__container--decorated:nth-of-type(2n) {
     padding-right: 22%;
     padding-left: 5%;
 
-    background-position: 95% 50%;
+    background-position: 93% 50%;
   }
 
   .section__paragraph {
