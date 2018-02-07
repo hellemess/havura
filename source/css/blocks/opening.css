@@ -1,18 +1,24 @@
 .opening {
-  display: flex;
-  min-height: 80vh;
-  padding-top: 10px;
-  padding-right: 8%;
+  padding-top: 24px;
   padding-bottom: 15px;
-  padding-left: 8%;
-
-  flex-direction: column;
-  justify-content: space-between;
 
   text-align: center;
 
   color: white;
   background: var(--main-color);
+}
+
+.opening__container {
+  display: flex;
+  width: 80%;
+  min-width: 270px;
+  max-width: 350px;
+  min-height: 72vh;
+  margin-right: auto;
+  margin-left: auto;
+
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .opening__logo {
@@ -22,16 +28,11 @@
 .opening__greeting,
 .opening__offers,
 .opening__stats {
-  width: 100%;
-  max-width: 350px;
   margin: 0;
-  margin-right: auto;
-  margin-left: auto;
+  margin-top: 24px;
 }
 
 .opening__greeting {
-  margin-top: 12px;
-
   font-size: 32px;
 }
 
@@ -74,10 +75,13 @@
 
 @media (--tablet) {
   .opening {
-    height: 80vh;
     padding-top: 20vh;
-    padding-right: 5%;
-    padding-left: 5%;
+  }
+
+  .opening__container {
+    width: 690px;
+    max-width: none;
+    min-height: 57vh;
 
     flex-direction: row;
     flex-wrap: wrap;
@@ -94,12 +98,6 @@
     height: 100px;
   }
 
-  .opening__greeting,
-  .opening__offers,
-  .opening__stats {
-    max-width: none;
-  }
-
   .opening__greeting {
     width: 42%;
     margin: 0;
@@ -109,7 +107,8 @@
 
   .opening__offers {
     display: flex;
-    width: 690px;
+    width: 100%;
+    margin-top: 0;
 
     justify-content: space-between;
   }
@@ -129,6 +128,12 @@
 
   .opening__stats {
     width: 42%;
-    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+@media (--desktop) {
+  .opening__container {
+    min-height: 60vh;
   }
 }

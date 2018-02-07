@@ -1,11 +1,13 @@
 @import 'variables.css';
 @import 'scaffolding.css';
 
-@import 'blocks/btn.css';
-
 @import 'blocks/header.css';
 @import 'blocks/opening.css';
-@import 'blocks/section.css';
+@import 'blocks/btn.css';
+@import 'blocks/container.css';
+@import 'blocks/heading.css';
+@import 'blocks/paragraph.css';
+@import 'blocks/about.css';
 @import 'blocks/stats.css';
 @import 'blocks/feedback.css';
 @import 'blocks/funds.css';

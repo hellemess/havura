@@ -1,0 +1,30 @@
+.heading {
+  width: min-content;
+  max-width: 100%;
+  margin: 0;
+  margin-top: 24px;
+  padding: 4px;
+  padding-left: 8px;
+
+  font-size: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  color: black;
+  background: var(--yellow-1);
+  box-shadow: 3px 3px 0 0 var(--main-color);
+}
+
+@media (--large-mobile) {
+  .heading {
+    font-size: 30px;
+  }
+}
+
+@media (--tablet) {
+  .heading {
+    display: inline-block;
+    width: auto;
+    margin-top: 35px;
+  }
+}

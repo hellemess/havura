@@ -1,6 +1,6 @@
 .btn {
   display: block;
-  width: 90%;
+  width: 230px;
   margin-top: 24px;
   margin-right: auto;
   margin-left: auto;
@@ -50,8 +50,6 @@
 
 @media (--tablet) {
   .btn {
-    display: inline-block;
-    width: auto;
     margin-top: 35px;
   }
 }

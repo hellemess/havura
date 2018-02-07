@@ -40,7 +40,6 @@
 }
 
 @media (--tablet) {
-
   .funds__item {
     margin-top: 60px;
     margin-right: 24px;
@@ -95,5 +94,57 @@
   .funds__item--jafi-nw img {
     width: 150px;
     height: 38px;
+  }
+}
+
+@media (--desktop) {
+  .funds__item--gpg img {
+    width: 200px;
+    height: 64px;
+  }
+
+  .funds__item--uja img {
+    width: 200px;
+    height: 60px;
+  }
+
+  .funds__item--jafi img {
+    width: 200px;
+    height: 46px;
+  }
+
+  .funds__item--fjnca img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .funds__item--aleph img {
+    width: 100px;
+    height: 74px;
+  }
+
+  .funds__item--caf img {
+    width: 200px;
+    height: 32px;
+  }
+
+  .funds__item--pj img {
+    width: 200px;
+    height: 68px;
+  }
+
+  .funds__item--jhf img {
+    width: 142px;
+    height: 150px;
+  }
+
+  .funds__item--rjc img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .funds__item--jafi-nw img {
+    width: 200px;
+    height: 50px;
   }
 }

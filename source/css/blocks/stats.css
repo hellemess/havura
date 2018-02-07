@@ -1,6 +1,7 @@
 .stats {
   width: 270px;
   margin: 0;
+  margin-top: -139px;
   margin-right: auto;
   margin-left: auto;
   padding: 0;
@@ -58,6 +59,7 @@
   .stats {
     display: flex;
     width: 690px;
+    margin-top: -70px;
     margin-right: auto;
     margin-left: auto;
 
@@ -99,5 +101,17 @@
     margin-top: 5px;
 
     font-size: 14px;
+  }
+}
+
+@media (--desktop) {
+  .stats {
+    margin-top: 35px;
+  }
+}
+
+@media (--large-desktop) {
+  .stats {
+    width: 1120px;
   }
 }

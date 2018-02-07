@@ -1,12 +1,10 @@
 .feedback {
-  width: 84%;
   margin-top: 24px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .feedback__toggle {
   display: flex;
+  width: 75%;
   max-width: 310px;
   margin-right: auto;
   margin-left: auto;
@@ -17,8 +15,8 @@
   text-transform: uppercase;
   text-align: center;
 
-  color: black;
-  background: var(--yellow-3);
+  color: var(--yellow-3);
+  background: var(--main-color);
 }
 
 .feedback--no-js .feedback__toggle {
@@ -39,16 +37,17 @@
 }
 
 .feedback__option:hover {
-  background: var(--yellow-1);
-}
-
-.feedback__toggle input:checked + .feedback__option {
-  color: var(--yellow-3);
+  color: var(--yellow-1);
   background: black;
 }
 
+.feedback__toggle input:checked + .feedback__option {
+  color: black;
+  background: var(--yellow-3);
+}
+
 .feedback__toggle input:checked + .feedback__option:hover {
-  background: var(--main-color);
+  background: var(--yellow-1);
 }
 
 .feedback__selection {
@@ -163,7 +162,6 @@
 
 @media (--tablet) {
   .feedback {
-    width: 90%;
     margin-top: 60px;
 
     text-align: center;
@@ -178,5 +176,22 @@
   .feedback__quote,
   .feedback__source {
     margin-right: 28px;
+  }
+}
+
+@media (--desktop) {
+  .feedback {
+    margin-top: 100px;
+  }
+
+  .feedback__selection--show {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .feedback__item {
+    width: 31%;
   }
 }
