@@ -196,7 +196,6 @@
 
 @media (--large-desktop) {
   .about {
-    width: 85%;
-    max-width: 1100px;
+    width: 1100px;
   }
 }

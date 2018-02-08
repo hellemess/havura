@@ -148,3 +148,9 @@
     height: 50px;
   }
 }
+
+@media (--large-desktop) {  
+  .funds {
+    width: 1100px;
+  }
+}

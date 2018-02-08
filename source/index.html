@@ -38,7 +38,10 @@
     <div class="header__container">
       <h1 class="visually-hidden">Ресурсный центр еврейского просвещения</h1>
       <a class="header__logo">
-        <img src="img/logo.svg" alt="Ресурсный центр еврейского просвещения" width="155" height="50">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-wordless.svg">
+          <img src="img/logo.svg" alt="Ресурсный центр еврейского просвещения" width="155" height="50">
+        </picture>
       </a>
       <button class="header__menu-toggle" type="button" aria-label="Открыть меню"></button>
       <div class="header__menu">
@@ -177,7 +180,7 @@
     <section class="feedback  feedback--no-js">
       <h2 class="visually-hidden">Отзывы</h2>
       <div class="feedback__toggle">
-        <input class="visually-hidden" type="radio" name="show" id="adults" checked>
+        <input class="visually-hidden" type="radio" name="show" id="adults" tabindex="-1" checked>
         <label class="feedback__option" for="adults" title="Посмотреть отзывы взрослых" tabindex="0">Отзывы взрослых</label>
         <input class="visually-hidden" type="radio" name="show" id="schoolchildren">
         <label class="feedback__option" for="schoolchildren" title="Посмотреть отзывы школьников" tabindex="0">Отзывы школьников</label>
@@ -377,7 +380,16 @@
       </ul>
       <ul class="footer__documents">
         <li class="footer__documents-item">
+          <a class="footer__documents-link" href="#">Программа</a>
+        </li>
+        <li class="footer__documents-item">
+          <a class="footer__documents-link" href="#">Устав</a>
+        </li>
+        <li class="footer__documents-item">
           <a class="footer__documents-link" href="#">Договор пожертвования</a>
+        </li>
+        <li class="footer__documents-item">
+          <a class="footer__documents-link" href="#">Отчетность по проектам</a>
         </li>
       </ul>
       <div class="footer__copyright">

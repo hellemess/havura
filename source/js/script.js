@@ -76,6 +76,7 @@ window.script = (() => {
 
   const feedback = document.querySelector('.feedback');
   const feedbackToggle = feedback.querySelector('.feedback__toggle');
+  const feedbackOptions = feedback.querySelectorAll('.feedback__option');
   const feedbackSelections = feedback.querySelectorAll('.feedback__selection');
 
   feedback.classList.remove('feedback--no-js');
@@ -83,6 +84,20 @@ window.script = (() => {
   feedbackToggle.addEventListener('change', () => {
     feedbackSelections.forEach((it) => {
       it.classList.toggle('feedback__selection--show');
+    });
+  });
+
+  feedbackOptions.forEach((it) => {
+    it.addEventListener('keydown', (evt) => {
+      if (isActivationEvent(evt)) {
+        if (evt.target.htmlFor === 'adults') {
+          feedbackSelections[0].classList.add('feedback__selection--show');
+          feedbackSelections[1].classList.remove('feedback__selection--show');
+        } else {          
+          feedbackSelections[0].classList.remove('feedback__selection--show');
+          feedbackSelections[1].classList.add('feedback__selection--show');
+        }
+      }
     });
   });
 })();
