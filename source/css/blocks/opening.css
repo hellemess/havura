@@ -1,5 +1,5 @@
 .opening {
-  padding-top: 24px;
+  padding-top: 15px;
   padding-bottom: 15px;
 
   text-align: center;
@@ -75,7 +75,7 @@
 
 @media (--tablet) {
   .opening {
-    padding-top: 20vh;
+    padding-top: 15vh;
   }
 
   .opening__container {
@@ -133,6 +133,10 @@
 }
 
 @media (--desktop) {
+  .opening {
+    padding-top: 25vh;
+  }
+
   .opening__container {
     min-height: 60vh;
   }

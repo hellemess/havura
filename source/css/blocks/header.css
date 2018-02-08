@@ -1,5 +1,6 @@
 .header {
-  padding-top: 11px;
+  min-height: 70px;
+  padding-top: 9px;
   padding-left: 28px;
 
   background: var(--main-color);
@@ -14,6 +15,16 @@
 .header__logo {
   position: relative;
   z-index: 2;
+
+  display: inline-block;
+}
+
+.header__logo:focus {
+  box-shadow:
+    0 0 0 3px var(--main-color),
+    0 0 0 6px var(--yellow-1);
+
+  outline: none;
 }
 
 .header--no-js .header__logo {
@@ -255,8 +266,9 @@
 
 @media (--tablet) {
   .header {
+    min-height: 95px;
     padding-top: 0;
-    padding-right: 21px;
+    padding-right: 22px;
     padding-left: 18px;
   }
 
@@ -277,11 +289,34 @@
 
   .header--no-js.header--index {
     padding-right: 32px;
-    padding-left: 19px;
+    padding-left: 30px;
   }
 
   .header__logo {
-    padding-top: 15px;
+    padding-top: 16px;
+  }
+
+  .header__logo::before {
+    content: '';
+
+    position: absolute;
+    top: 14px;
+    left: -4px;
+
+    display: none;
+    width: 68px;
+    height: 68px;
+
+    border: 3px solid var(--yellow-1);
+    border-radius: 50%;
+  }
+
+  .header__logo:focus {
+    box-shadow: none;
+  }
+
+  .header__logo:focus::before {
+    display: block;
   }
 
   .header--no-js .header__logo {
@@ -295,8 +330,8 @@
   }
 
   .header__logo img {
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
   }
 
   .header__menu-toggle {
@@ -331,7 +366,7 @@
   .header--no-js .header__nav {
     margin-top: 25px;
     margin-right: -2px;
-    margin-left: -67px;
+    margin-left: -72px;
 
     order: 1;
   }
@@ -375,9 +410,9 @@
   }
 
   .header__menu-link {
-    padding-top: 9px;
+    padding-top: 11px;
     padding-right: 4px;
-    padding-bottom: 8px;
+    padding-bottom: 9px;
     padding-left: 4px;
   }
 
@@ -406,7 +441,7 @@
     content: '';
 
     position: absolute;
-    top: 18px;
+    top: 20px;
     right: 3px;
 
     width: 8px;
@@ -450,7 +485,7 @@
   }
 
   .header--no-js .header__search {
-    margin-top: 42px;
+    margin-top: 48px;
   }
 
   .header--no-js.header--index .header__search {
@@ -460,6 +495,10 @@
   .header__search::before {
     top: 0;
     left: 8px;
+  }
+
+  .header--no-js.header--index .header__search::before {
+    left: -3px;
   }
 
   .header__search-field,
@@ -474,6 +513,10 @@
     margin-left: 50px;
   }
 
+  .header--no-js.header--index .header__search-field {
+    margin-left: 39px;
+  }
+
   .header__search-button {
     width: auto;
   }
@@ -485,22 +528,17 @@
     padding-left: 22px;
   }
 
+  .header--index {
+    min-height: 65px;
+  }
+
   .header--no-js.header--index {
     padding-right: 5%;
-    padding-left: 3%;
+    padding-left: 5%;
   }
 
   .header__logo {
-    padding-top: 5px;
-  }
-
-  .header--no-js .header__logo {
-    padding-top: 15px;
-  }
-
-  .header__logo img {
-    width: 60px;
-    height: 60px;
+    padding-top: 16px;
   }
 
   .header__menu {
@@ -520,11 +558,11 @@
   }
 
   .header--no-js .header__nav {
-    margin-left: -73px;
+    margin-left: -72px;
   }
 
   .header--no-js.header--index .header__nav {
-    margin-left: 21px;
+    margin-left: 0;
   }
 
   .header__menu-list {
@@ -551,15 +589,21 @@
   }
 
   .header__menu-link {
-    padding-top: 20px;
-    padding-bottom: 17px;
+    padding-top: 35px;
+    padding-bottom: 32px;
 
     font-size: 16px;
   }
 
-  .header--no-js .header__menu-link {
+  .header--no-js .header__menu-link,
+  .header--no-js.header--index .header__menu-link {
     padding-top: 9px;
     padding-bottom: 8px;
+  }
+
+  .header--index .header__menu-link {
+    padding-top: 20px;
+    padding-bottom: 17px;
   }
 
   .header--no-js .header__menu-link::before,
@@ -598,7 +642,7 @@
   }
 
   .header__menu-link--with-submenu::after {
-    top: 29px;
+    top: 44px;
 
     width: 8px;
     height: 8px;
@@ -609,7 +653,7 @@
   }
 
   .header__search {
-    margin-top: 20px;
+    margin-top: 35px;
   }
 
   .header__search::before {
@@ -617,7 +661,11 @@
   }
 
   .header--no-js .header__search {
-    margin-top: 47px;
+    margin-top: 48px;
+  }
+
+  .header--index .header__search {
+    margin-top: 20px;
   }
 
   .header--no-js.header--index .header__search {
@@ -666,7 +714,7 @@
   }
 
   .header__menu-link::before {
-    top: 18px;
+    top: 33px;
     left: 5px;
   }
 
@@ -675,8 +723,7 @@
   }
 
   .header__menu-link--big-events::before {
-    top: 15px;
-    left: 5px;
+    top: 30px;
   }
 
   .header__search::before {
