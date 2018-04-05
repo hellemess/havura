@@ -1,0 +1,121 @@
+.conference {
+  margin-top: 25px;
+  padding-top: 15px;
+
+  background: var(--secondary-color-light);
+  box-shadow: 3px 3px 0 0 var(--secondary-color-dark);
+}
+
+.conference__heading {
+  margin: 0;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  color: black;
+}
+
+.conference__audience {
+  margin-right: 20px;
+  margin-left: 20px;
+
+  font-style: italic;
+  font-size: 14px;
+}
+
+.conference__description {
+  margin: 0;
+  margin-top: 25px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.conference__link {
+  margin-left: -3px;
+
+  color: black;
+  border: 3px solid transparent;
+}
+
+.conference__link:focus {
+  border-color: var(--secondary-color-dark);
+
+  outline: none;
+}
+
+.conference__link:hover {
+  text-decoration: none;
+}
+
+.conference__link:visited {
+  color: var(--primary-color);
+}
+
+.conference__stats {
+  margin: 0;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 0;
+
+  font-weight: bold;
+  text-align: center;
+}
+
+.conference__stats-item {
+  margin-top: 25px;
+
+  list-style: none;
+
+  background-repeat: no-repeat;
+  background-position: 35% 0;
+  background-size: 25%;
+}
+
+.conference__stats-item:nth-child(2n-1) {
+  background-position: 65% 0;
+}
+
+.conference__stats-item--hours {
+  background-image: url('../img/icon-hours.svg');
+}
+
+.conference__stats-item--participants {
+  background-image: url('../img/icon-participants.svg');
+}
+
+.conference__stats-item--volunteers {
+  background-image: url('../img/icon-volunteers.svg');
+}
+
+.conference__stats-item--cities {
+  background-image: url('../img/icon-cities.svg');
+}
+
+.conference__stats-item--countries {
+  background-image: url('../img/icon-countries.svg');
+}
+
+.conference__stats-item--organizations {
+  background-image: url('../img/icon-organizations.svg');
+}
+
+.conference__stats-number {
+  font-size: 40px;
+}
+
+.conference__stats-unit {
+  display: block;
+}
+
+.conference__participate {
+  margin-top: 25px;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+
+  background-color: var(--secondary-color-middle);
+}
+
+.conference__topic {
+  margin: 0;
+}

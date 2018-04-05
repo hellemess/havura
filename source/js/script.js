@@ -30,7 +30,7 @@ window.script = (() => {
 
   // выпадение подменю при фокусе на ссылке
 
-  if (document.documentElement.clientWidth > 750) {
+  if (window.innerWidth > 767) {
     const menuLinks = header.querySelectorAll('.header__menu-link');
     const submenus = header.querySelectorAll('.header__submenu-list');
     const submenuLinks = header.querySelectorAll('.header__submenu-link');
@@ -46,6 +46,10 @@ window.script = (() => {
     }
 
     menuLinks.forEach((it) => {
+      if (it.href === '') {
+        it.setAttribute('tabindex', 0);
+      }
+
       it.addEventListener('focus', () => {
         refreshMenu();
 
@@ -54,12 +58,12 @@ window.script = (() => {
         if (it.classList.contains('header__menu-link--with-submenu')) {
           it.parentElement.children[1].classList.add('header__submenu-list--show');
         }
-      });
 
-      it.addEventListener('blur', (evt) => {
-        if (evt.relatedTarget === null || !evt.relatedTarget.classList.contains('header__submenu-link')) {
-          refreshMenu();
-        }
+        it.addEventListener('blur', (evt) => {
+          if (evt.relatedTarget === null || !evt.relatedTarget.classList.contains('header__submenu-link')) {
+            refreshMenu();
+          }
+        });
       });
     });
 

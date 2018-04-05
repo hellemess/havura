@@ -1,8 +1,9 @@
 .funds {
   display: flex;
   width: 84%;
+  max-width: 1100px;
   margin: 0;
-  margin-top: 24px;
+  margin-top: 25px;
   margin-right: auto;
   margin-left: auto;
   padding: 0;
@@ -13,7 +14,7 @@
 }
 
 .funds__item {
-  margin-top: 24px;
+  margin-top: 25px;
   margin-right: 12px;
   margin-left: 12px;
 
@@ -146,11 +147,5 @@
   .funds__item--jafi-nw img {
     width: 200px;
     height: 50px;
-  }
-}
-
-@media (--large-desktop) {  
-  .funds {
-    width: 1100px;
   }
 }

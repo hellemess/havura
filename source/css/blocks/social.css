@@ -20,7 +20,7 @@
 
 .social__link:focus svg,
 .social__link:hover svg {
-  fill: var(--yellow-1);
+  fill: var(--secondary-color-dark);
 }
 
 @media(--tablet) {

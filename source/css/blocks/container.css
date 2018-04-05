@@ -8,11 +8,6 @@
 @media (--tablet) {
   .container {
     width: 90%;
-  }
-}
-
-@media (--large-desktop) {
-  .container {
-    width: 1100px;
+    max-width: 1100px;
   }
 }

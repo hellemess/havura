@@ -1,7 +1,7 @@
 .btn {
   display: block;
   width: 230px;
-  margin-top: 24px;
+  margin-top: 25px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 7px;
@@ -19,37 +19,67 @@
 
   color: white;
   background: black;
-  border: 3px solid transparent;
+  border: 3px solid black;
 }
 
 .btn:focus {
-  border-color: var(--yellow-1);
+  box-shadow:
+    0 0 0 3px white,
+    0 0 0 6px var(--secondary-color-dark);
 
-  outline: 3px solid black;
+  outline: none;
 }
 
 .btn:hover {
-  color: var(--yellow-1);
+  color: black;
+  background: white;
 }
 
 .btn--yellow {
-  color: black;
-  background: var(--yellow-1);
+  color: var(--primary-color);
+  background: var(--secondary-color-dark);
+  border-color: var(--secondary-color-dark);
 }
 
 .btn--yellow:focus {
-  border-color: black;
-
-  outline: 3px solid var(--yellow-1);
+  box-shadow:
+    0 0 0 3px var(--primary-color),
+    0 0 0 6px var(--secondary-color-dark);
 }
 
 .btn--yellow:hover {
-  color: black;
-  background: var(--yellow-3);
+  color: var(--secondary-color-dark);
+  background: var(--primary-color);
+}
+
+.btn--on-yellow {
+  color: var(--secondary-color-light);
+}
+
+.btn--on-yellow:focus {
+  box-shadow:
+    0 0 0 3px var(--secondary-color-light),
+    0 0 0 6px var(--secondary-color-dark);
+}
+
+.btn--on-yellow:hover {
+  background: var(--secondary-color-light);
 }
 
 @media (--tablet) {
   .btn {
     margin-top: 35px;
+  }
+}
+
+@media (--desktop) {
+  .btn--on-yellow:focus {
+    box-shadow:
+      0 0 0 3px white,
+      0 0 0 6px var(--secondary-color-dark);
+  }
+
+  .btn--on-yellow:hover {
+    background: white;
   }
 }

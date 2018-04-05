@@ -1,9 +1,13 @@
 :root {
-  --main-color: #333;
+  --gold: #ffc600;
+  --jasmine: #ffe073;
+  --jet: #333;
+  --mustard: #ffd440;
 
-  --yellow-1: #FFC600;
-  --yellow-2: #FFD440;
-  --yellow-3: #FFE073;
+  --primary-color: var(--jet);
+  --secondary-color-dark: var(--gold);
+  --secondary-color-middle: var(--mustard);
+  --secondary-color-light: var(--jasmine);
 }
 
 @custom-media --large-mobile (min-width: 405px);

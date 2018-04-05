@@ -1,5 +1,5 @@
 .feedback {
-  margin-top: 24px;
+  margin-top: 25px;
 }
 
 .feedback__toggle {
@@ -15,8 +15,8 @@
   text-transform: uppercase;
   text-align: center;
 
-  color: var(--yellow-3);
-  background: var(--main-color);
+  color: var(--secondary-color-light);
+  background: var(--primary-color);
 }
 
 .feedback--no-js .feedback__toggle {
@@ -31,23 +31,23 @@
 }
 
 .feedback__option:focus {
-  border-color: var(--yellow-1);
+  border-color: var(--secondary-color-dark);
 
   outline: none;
 }
 
 .feedback__option:hover {
-  color: var(--yellow-1);
+  color: var(--secondary-color-dark);
   background: black;
 }
 
 .feedback__toggle input:checked + .feedback__option {
   color: black;
-  background: var(--yellow-3);
+  background: var(--secondary-color-light);
 }
 
 .feedback__toggle input:checked + .feedback__option:hover {
-  background: var(--yellow-1);
+  background: var(--secondary-color-dark);
 }
 
 .feedback__selection {
@@ -80,7 +80,7 @@
 .feedback__item {
   position: relative;
 
-  margin-top: 24px;
+  margin-top: 25px;
   padding-top: 8px;
   padding-right: 8px;
   padding-bottom: 16px;
@@ -89,8 +89,8 @@
   text-align: right;
 
   color: black;
-  background: var(--yellow-3);
-  box-shadow: 3px 3px 0 0 var(--yellow-1);
+  background: var(--secondary-color-light);
+  box-shadow: 3px 3px 0 0 var(--secondary-color-dark);
 }
 
 .feedback__item::before {
@@ -116,11 +116,11 @@
   text-decoration: none;
 
   color: black;
-  background: var(--yellow-2);
+  background: var(--secondary-color-middle);
 }
 
 .feedback__tag:focus {
-  background: var(--yellow-1);
+  background: var(--secondary-color-dark);
 
   outline: none;
 }
@@ -144,7 +144,7 @@
 
 .feedback__source {
   display: block;
-  margin-top: 24px;
+  margin-top: 25px;
   margin-right: 16px;
 }
 
