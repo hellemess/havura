@@ -47,7 +47,8 @@
 }
 
 .opening__offers-item a {
-  width: 80%;
+  width: 85%;
+  max-width: 280px;
   margin-top: 25px;
 }
 

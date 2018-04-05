@@ -56,7 +56,7 @@ window.script = (() => {
         it.style.background = 'rgba(0, 0, 0, 0.95)';
 
         if (it.classList.contains('header__menu-link--with-submenu')) {
-          it.parentElement.children[1].classList.add('header__submenu-list--show');
+          it.nextElementSibling.classList.add('header__submenu-list--show');
         }
 
         it.addEventListener('blur', (evt) => {
@@ -96,6 +96,14 @@ window.script = (() => {
     feedbackOptions.forEach((it) => {
       it.addEventListener('keydown', (evt) => {
         if (isActivationEvent(evt)) {
+          evt.target.previousElementSibling.checked = true;
+
+          feedbackOptions.forEach((it) => {
+            it.setAttribute('tabindex', 0);
+          });
+
+          it.setAttribute('tabindex', -1);
+
           if (evt.target.htmlFor === 'adults') {
             feedbackSelections[0].classList.add('feedback__selection--show');
             feedbackSelections[1].classList.remove('feedback__selection--show');

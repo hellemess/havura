@@ -1,9 +1,11 @@
 .stats {
   width: 270px;
-  margin: 0;
-  margin-top: -139px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.stats__list {
+  margin: 0;
   padding: 0;
 
   text-align: center;
@@ -50,18 +52,18 @@
   display: block;
 
   font-weight: bold;
-  font-size: 72px;
+  font-size: 74px;
 
   color: black;
 }
 
 @media (--tablet) {
   .stats {
-    display: flex;
     width: 690px;
-    margin-top: -70px;
-    margin-right: auto;
-    margin-left: auto;
+  }
+
+  .stats__list {
+    display: flex;
 
     justify-content: center;
     flex-wrap: wrap;
@@ -70,8 +72,9 @@
   .stats__item {
     display: flex;
     width: 200px;
-    margin-top: 60px;
-    margin-right: 35px;
+    margin-top: 35px;
+    margin-right: 15px;
+    margin-left: 15px;
     padding-top: 80px;
 
     text-align: left;
@@ -82,11 +85,6 @@
   .stats__item:nth-child(2n-1),
   .stats__item:nth-child(2n) {
     background-position: 50% 0;
-  }
-
-  .stats__item--trip,
-  .stats__item--videos {
-    margin-right: 0;
   }
 
   .stats__number {
@@ -105,13 +103,21 @@
 }
 
 @media (--desktop) {
-  .stats {
-    margin-top: 35px;
+  .stats {    
+    margin-top: 65px;
   }
 }
 
 @media (--large-desktop) {
   .stats {
     width: 1120px;
+  }
+
+  .stats__item:first-child {
+    margin-left: 0;
+  }
+
+  .stats__item:last-child {
+    margin-right: 0;
   }
 }
