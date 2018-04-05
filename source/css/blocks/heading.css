@@ -5,20 +5,16 @@
   margin-top: 25px;
   padding: 4px;
   padding-left: 8px;
+  overflow: hidden;
 
   font-size: 22px;
   letter-spacing: 5px;
   text-transform: uppercase;
+  text-overflow: ellipsis;
 
   color: black;
   background: var(--secondary-color-dark);
   box-shadow: 3px 3px 0 0 var(--primary-color);
-}
-
-@media (--large-mobile) {
-  .heading {
-    font-size: 30px;
-  }
 }
 
 @media (--tablet) {
@@ -26,5 +22,7 @@
     display: inline-block;
     width: auto;
     margin-top: 35px;
+
+    font-size: 32px;
   }
 }
