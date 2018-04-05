@@ -181,6 +181,10 @@
   left: 33px;
 }
 
+.header__menu-link--with-submenu svg:last-child {
+  display: none;
+}
+
 .header__menu-link[href]:hover svg {
   fill: var(--secondary-color-dark);
 }
