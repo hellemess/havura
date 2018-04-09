@@ -33,49 +33,63 @@
   background: white;
 }
 
-.btn--yellow {
+.btn--secondary-color-dark {
   color: var(--primary-color);
   background: var(--secondary-color-dark);
   border-color: var(--secondary-color-dark);
 }
 
-.btn--yellow:focus {
+.btn--secondary-color-dark:focus {
   box-shadow:
     0 0 0 3px var(--primary-color),
     0 0 0 6px var(--secondary-color-dark);
 }
 
-.btn--yellow:hover {
+.btn--secondary-color-dark:hover {
   color: var(--secondary-color-dark);
   background: var(--primary-color);
 }
 
-.btn--on-yellow {
+.btn--on-secondary-color-light {
   color: var(--secondary-color-light);
 }
 
-.btn--on-yellow:focus {
+.btn--on-secondary-color-light:focus {
   box-shadow:
     0 0 0 3px var(--secondary-color-light),
     0 0 0 6px var(--secondary-color-dark);
 }
 
-.btn--on-yellow:hover {
+.btn--on-secondary-color-light:hover {
   background: var(--secondary-color-light);
 }
 
+.btn--on-secondary-color-middle {
+  color: var(--secondary-color-middle);
+}
+
+.btn--on-secondary-color-middle:focus {
+  box-shadow:
+    0 0 0 3px var(--secondary-color-middle),
+    0 0 0 6px var(--secondary-color-dark);
+}
+
+.btn--on-secondary-color-middle:hover {
+  background: var(--secondary-color-middle);
+}
+
 @media (--desktop) {
-  .btn--on-yellow {
+  .btn--on-secondary-color-light {
     color: white;
   }
 
-  .btn--on-yellow:focus {
+  .btn--on-secondary-color-light:focus {
     box-shadow:
       0 0 0 3px white,
       0 0 0 6px var(--secondary-color-dark);
   }
 
-  .btn--on-yellow:hover {
+  .btn--on-secondary-color-light:hover {
     background: white;
   }
 }

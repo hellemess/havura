@@ -32,6 +32,8 @@
 .conference__link {
   margin-left: -3px;
 
+  text-decoration-skip-ink: auto;
+
   color: black;
   border: 3px solid transparent;
 }
@@ -44,10 +46,6 @@
 
 .conference__link:hover {
   text-decoration: none;
-}
-
-.conference__link:visited {
-  color: var(--primary-color);
 }
 
 .conference__stats {
@@ -99,7 +97,7 @@
 }
 
 .conference__stats-number {
-  font-size: 40px;
+  font-size: 36px;
 }
 
 .conference__stats-unit {
@@ -113,9 +111,21 @@
   padding-bottom: 15px;
   padding-left: 20px;
 
+  color: black;
   background-color: var(--secondary-color-middle);
 }
 
 .conference__topic {
   margin: 0;
+
+  font-size: 22px;
+}
+
+.conference__topic + .conference__date {
+  display: block;
+  margin-top: 25px;
+}
+
+.conference__participate a {
+  margin-top: 25px;
 }
