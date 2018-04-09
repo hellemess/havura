@@ -148,6 +148,7 @@
 .feedback__tag:focus,
 .feedback__tag:hover {
   text-decoration: underline rgba(0, 0, 0, 0.5);
+  text-decoration-skip-ink: auto;
 }
 
 .feedback__tag:focus {
