@@ -11,6 +11,8 @@
   margin-right: 20px;
   margin-left: 20px;
 
+  font-size: 22px;
+
   color: black;
 }
 
@@ -59,7 +61,10 @@
 }
 
 .conference__stats-item {
+  width: 230px;
   margin-top: 25px;
+  margin-right: auto;
+  margin-left: auto;
 
   list-style: none;
 
@@ -127,5 +132,65 @@
 }
 
 .conference__participate a {
+  width: 85%;
+  max-width: 280px;
   margin-top: 25px;
+}
+
+@media (--tablet) {
+  .conference {
+    margin-top: 35px;
+    padding-top: 35px;
+  }
+
+  .conference__heading,
+  .conference__audience,
+  .conference__description {
+    margin-right: 35px;
+    margin-left: 35px;
+  }
+
+  .conference__heading {
+    font-size: 32px;
+  }
+
+  .conference__stats {
+    display: flex;
+  }
+
+  .conference__stats-item,
+  .conference__stats-item:nth-child(2n-1) {
+    background-position: 50% 0;
+  }
+
+  .conference__stats-item {
+    padding-bottom: 25px;
+
+    background-size: contain;
+  }
+
+  .conference__participate {
+    display: flex;
+    margin-top: 35px;
+    padding: 35px;
+
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  .conference__topic {
+    max-width: 65.3%;
+  }
+
+  .conference__topic + .conference__date {
+    width: 100%;
+
+    order: 1;
+  }
+
+  .conference__participate a {
+    width: 215px;
+    margin: 0;
+    margin-left: auto;
+  }
 }

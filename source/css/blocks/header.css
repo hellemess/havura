@@ -596,19 +596,6 @@
     top: 15px;
   }
 
-  .header__menu-link--big-events svg {
-    top: 28px;
-  }
-
-  .header--no-js .header__menu-link--big-events svg,
-  .header--no-js.header--index .header__menu-link--big-events svg {
-    top: 6px;
-  }
-
-  .header--index .header__menu-link--big-events svg {
-    top: 13px;
-  }
-
   .header__search svg {
     left: 0;
   }
