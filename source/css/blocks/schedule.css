@@ -1,0 +1,95 @@
+.schedule__day {
+  position: relative;
+
+  list-style: none;
+}
+
+.schedule__date {
+  display: block;
+  margin-top: 25px;
+
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1;
+  text-align: center;
+}
+
+.schedule__month {
+  display: block;
+
+  font-size: 16px;
+  line-height: 1;
+}
+
+.schedule__container {
+  font-weight: bold;
+}
+
+.schedule__parallel {
+  position: relative;
+
+  margin-top: 25px;
+
+  display: flex;
+}
+
+.schedule__btn {
+  position: absolute;
+  top: 0;
+
+  width: 20px;
+  height: 100%;
+  padding: 0;
+
+  background: none;
+  border: none;
+}
+
+.schedule__btn--prev {
+  left: -20px;
+}
+
+.schedule__btn:focus {
+  outline: none;
+}
+
+.schedule__btn--next {
+  right: -20px;
+}
+
+.schedule__btn svg {
+  position: relative;
+  z-index: -1;
+}
+
+.schedule__btn:focus svg {
+  fill: var(--secondary-color-dark);
+}
+
+.schedule__time {
+  width: 20%;
+  min-width: 55px;
+}
+
+.schedule__frame {
+  position: relative;
+
+  width: 100%;
+  overflow: hidden;
+}
+
+.schedule__content {
+  position: relative;
+
+  display: flex;
+  width: 100%;
+
+  transition: left 1s;
+}
+
+.schedule__break {
+  display: flex;
+  margin-top: 25px;
+
+  font-size: 10px;
+}

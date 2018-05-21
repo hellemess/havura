@@ -130,7 +130,7 @@
 }
 
 .conference__participate a {
-  width: 85%;
+  width: 99.8%;
   max-width: 280px;
   margin-top: 25px;
 }
@@ -175,7 +175,7 @@
   }
 
   .conference__topic {
-    max-width: 65.3%;
+    max-width: 65.2%;
   }
 
   .conference__topic + .conference__date {

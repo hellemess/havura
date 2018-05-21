@@ -52,7 +52,7 @@
   cursor: auto;
 }
 
-.feedback__selection {
+.feedback--with-toggle .feedback__selection {
   display: none;
 }
 
@@ -60,40 +60,15 @@
   display: block;
 }
 
-.feedback__selection--show {
+.feedback--with-toggle .feedback__selection--show {
   display: block;
 }
 
-.feedback__heading {
-  position: relative;
-
+.feedback--with-toggle .heading {
   display: none;
-  margin: 0;
-  margin-top: 25px;
-  padding-right: 4px;
-  padding-left: 5px;
-
-  letter-spacing: 2px;
-  text-transform: uppercase;
-
-  color: black;
 }
 
-.feedback__heading::before {
-  content: '';
-
-  position: absolute;
-  top: 11px;
-  left: 0;
-  z-index: -1;
-
-  width: 100%;
-  height: 5px;
-
-  background: var(--secondary-color-light);
-}
-
-.feedback--no-js .feedback__heading {
+.feedback--no-js .heading {
   display: inline-block;
 }
 

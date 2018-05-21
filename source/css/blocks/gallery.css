@@ -1,0 +1,43 @@
+.gallery__block {
+  position: relative;
+
+  margin-top: 25px;
+}
+
+.gallery__btn {
+  position: absolute;
+  top: 50%;
+
+  width: 40px;
+  height: 40px;
+  padding: 0;
+
+  transform: translateY(-20px);
+
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+}
+
+.gallery__btn--prev {
+  left: 0;
+}
+
+.gallery__btn--next {
+  right: 0;
+}
+
+.gallery__btn svg {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.gallery__img {
+  display: none;
+}
+
+.gallery__img--show {
+  display: block;
+}
+
+.gallery__img img {
+  width: 100%;
+}

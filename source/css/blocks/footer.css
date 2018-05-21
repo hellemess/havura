@@ -1,5 +1,5 @@
 .footer {
-  margin-top: 25px;
+  margin-top: 40px;
 
   color: white;
   background: var(--primary-color);
@@ -95,7 +95,7 @@
 
 @media (--tablet) {
   .footer {
-    margin-top: 35px;
+    margin-top: 50px;
   }
 
   .footer__container {
