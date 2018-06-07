@@ -1,4 +1,4 @@
-.session {
+.schedule__content .session {
   width: 100%;
 
   flex-shrink: 0;
@@ -19,4 +19,20 @@
   line-height: 1.5;
 
   background: var(--secondary-color-dark);
+}
+
+@media (--tablet) {
+  .schedule__content .session {
+    width: 50%;
+    padding-right: 20px;
+    padding-left: 5px;
+  }
+}
+
+@media (--desktop) {
+  .schedule__content .session {
+    width: 25%;
+    padding-right: 30px;
+    padding-left: 5px;
+  }
 }

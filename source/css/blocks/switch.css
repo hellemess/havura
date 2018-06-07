@@ -1,0 +1,51 @@
+.switch {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+
+  width: 20px;
+  height: 100%;
+  padding: 0;
+
+  background: none;
+  border: none;
+}
+
+.switch:focus {
+  outline: none;
+}
+
+.switch--prev {
+  left: -25px;
+}
+
+.switch--next {
+  right: -25px;
+}
+
+.switch svg {
+  position: relative;
+  z-index: -1;
+}
+
+.switch:disabled svg {
+  fill: white;
+}
+
+.gallery .switch:disabled svg {
+  fill: var(--secondary-color-light);
+}
+
+.switch:focus svg {
+  
+}
+
+@media (--tablet) {
+  .gallery .switch {
+    display: none;
+  }
+
+  .switch--prev {
+    left: 125px;
+  }
+}

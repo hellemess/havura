@@ -6,16 +6,12 @@
   margin-left: auto;
 }
 
-.container .heading {
-  margin-top: 25px;
+.gallery .container {
+  position: relative;
 }
 
 @media (--tablet) {
   .container {
     width: 91.8%;
-  }
-
-  .container .heading {
-    margin-top: 35px;
   }
 }

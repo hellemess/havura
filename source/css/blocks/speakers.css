@@ -1,0 +1,22 @@
+.speakers a {
+  width: 85%;
+  max-width: 280px;
+  margin-top: 25px;
+}
+
+@media (--tablet) {
+  .speakers {
+    text-align: center;
+  }
+
+  .speakers .paragraph {
+    text-align: left;
+  }
+
+  .speakers a {
+    display: inline-block;
+    width: auto;
+    max-width: none;
+    margin-top: 0;
+  }
+}

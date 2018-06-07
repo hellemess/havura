@@ -13,6 +13,60 @@ window.script = (() => {
     });
   };
 
+  const activateSwitch = (element, content) => {
+    const prevBtn = element.querySelector(`.switch--prev`);
+    const nextBtn = element.querySelector(`.switch--next`);
+    const itemsCount = content.children.length;
+
+    let currentPosition = 0;
+
+    const disableBtns = () => {
+      prevBtn.disabled = currentPosition === 0 ? true : false;
+
+      if (window.innerWidth < 768) {
+        nextBtn.disabled = currentPosition === - (itemsCount - 1) * 100 ? true : false;
+      } else if (window.innerWidth < 1024) {
+        nextBtn.disabled = currentPosition === - (itemsCount - 1) * 100 / 2 + 50 ? true : false;
+      } else {
+        nextBtn.disabled = currentPosition === - (itemsCount - 1) * 100 / 4 + 75 ? true : false;
+      }
+    };
+
+    disableBtns();
+
+    const switchItems = (evt) => {
+      if (!evt.target.disabled && evt.target === prevBtn) {
+        if (window.innerWidth < 768) {
+          currentPosition += 100;
+        } else if (window.innerWidth < 1024) {
+          currentPosition += 50;
+        } else {
+          currentPosition += 25;
+        }
+
+        console.log(currentPosition);
+
+        content.style.left = `${currentPosition}%`;
+        disableBtns();
+      } else if (!evt.target.disabled && evt.target === nextBtn) {
+        if (window.innerWidth < 768) {
+          currentPosition -= 100;
+        } else if (window.innerWidth < 1024) {
+          currentPosition -= 50;
+        } else {
+          currentPosition -= 25;
+        }
+
+        console.log(currentPosition);
+
+        content.style.left = `${currentPosition}%`;
+        disableBtns();
+      }
+    };
+
+    addHandler(element, switchItems);
+  }
+
   // открытие и закрытие меню сайта по нажанию на иконку меню
 
   const header = document.querySelector(`.header`);
@@ -123,43 +177,22 @@ window.script = (() => {
 
     Array.from(parallels).forEach((it) => {
       const frame = it.querySelector(`.schedule__frame`);
-      const content = frame.children[0];
-      const lecturesCount = content.children.length;
-      console.log(lecturesCount);
 
-      let currentPosition = 0;
+      if (frame) {
+        const content = frame.children[0];
 
-      const switchLectures = (evt) => {
-        if (evt.target.classList.contains(`schedule__btn--prev`) && currentPosition < 0) {
-          currentPosition += 100;
-          content.style.left = `${currentPosition}%`;
-        } else if (evt.target.classList.contains(`schedule__btn--next`) && currentPosition > - (lecturesCount - 1) * 100) {
-          currentPosition -= 100;
-          content.style.left = `${currentPosition}%`;
-        }
-      };
-
-      it.addEventListener(`click`, (evt) => {
-        addHandler(it, switchLectures);
-      });
+        activateSwitch(it, content);
+      }
     });
   }
 
   // галерея фотографий
 
-  const gallery = document.querySelector(`.gallery__block`);
+  const gallery = document.querySelector(`.gallery`);
 
-  if (gallery) {
-    const images = document.querySelectorAll(`.gallery__img`);
+  if (gallery && window.innerWidth < 768) {
+    const content = gallery.querySelector(`.gallery__content`);
 
-    let currentImageIndex = 0;
-
-    gallery.addEventListener(`click`, (evt) => {
-      if (evt.target.classList.contains(`gallery__btn--prev`) && currentImageIndex > 0) {
-        images[currentImageIndex].classList.remove('gallery__item--show');
-        currentImageIndex--;
-        images[currentImageIndex].classList.add('gallery__item--show');
-      }
-    });
+    activateSwitch(gallery, content);
   }
 })();
